@@ -24,7 +24,8 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
 ```
 
-# Debtors API
+## Debtors API
 
+### GET requests 
 **Complete list of debtors** `https://app.mytourist.cloud/api/debtors`   
 **Single debtor** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
