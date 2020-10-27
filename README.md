@@ -10,6 +10,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 
 ### Functions
 - [Debtors API](#debtors-api)
+- [Roomtypes API](#roomtypes-api)
 - [Availability API](#availability-api)
 
 ## The MyTourist REST API
@@ -67,6 +68,50 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/debtors' \
 --form 'company_name=MyTourist' \
 --form 'company_chamber_id=123456789'
 ```
+
+# Roomtypes API
+Retreive all `roomtypes` created in MyTourist. The results will included all attached price `rates`.
+
+**GET** `https://app.mytourist.cloud/api/v1/roomtypes`
+
+**Query Parameters**
+<table>
+    <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>
+</table>
+
+**Example**
+```bash
+curl --location --request GET 'https://app.mytourist.cloud/api/v1/roomtypes' \
+--header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
+```
+
+**Results**
+```JSON
+[
+    {
+        "id":"81912063",
+        "type":"single",
+        "number_of_rooms":1,
+        "name":"Eenpersoonskamer",
+        "description":"Dit is een eenpersoonskamer met uitzicht over het meer.",
+        "rates":[
+            {
+                "id":"81912063",
+                "name":"Standaardprijs"
+            },
+            {
+                "id":"82010274",
+                "name":"Niet standard"
+            }
+        ]
+    },
+    {
+        ...
+    }
+]
+```
+
+
 
 # Availability API
 To check the availability on a single or all available `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price `rates`.
