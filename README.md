@@ -44,10 +44,18 @@ You can easally create a new debtor by calling the following URL by the `POST` m
     <tr><td>first_name</td><td>required</td><td>-</td></tr>    
     <tr><td>last_name</td><td>required</td><td>-</td></tr>
     <tr><td>company_name</td><td>optional</td><td>-</td></tr>
-    <tr><td>company_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
+    <tr><td>company_chamber_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
+    <tr><td>vat_id</td><td>optional</td><td></td></tr>
+    <tr><td>address</td><td>optional</td><td></td></tr>
+    <tr><td>zipcode</td><td>optional</td><td></td></tr>
+    <tr><td>city</td><td>optional</td><td></td></tr>
+    <tr><td>country</td><td>optional</td><td>ISO 639-1</td></tr>
+    <tr><td>phone</td><td>optional</td><td></td></tr>
+    <tr><td>email</td><td>optional</td><td></td></tr>
+    <tr><td>note</td><td>optional</td><td></td></tr>
 </table>
 
-**Example in bash**
+**Example**
 ```bash
 curl --location --request POST 'https://app.mytourist.cloud/api/debtors' \
 --header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
