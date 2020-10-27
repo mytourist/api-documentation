@@ -25,22 +25,22 @@ The API key or token must be sent along with each API request, by providing it i
 
 In the example below we use a API key on the GET method of the debtors resource. This method fetches a list of debtors.
 ```bash
-curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
+curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
 ```
 
 # Debtors API
 
 ## List all debtors
-**GET** `https://app.mytourist.cloud/api/debtors`
+**GET** `https://app.mytourist.cloud/api/v1/debtors`
 
 ## Retrieve a single debtor
-**GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
+**GET** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
 ## Create or update a debtor
 You can easally create a new debtor by calling the following URL by the `POST` method. When you want to update any debtor you'll need to use the `PUT` method with the **complete** form data and `debtor_id` inside the URL. Both endpoints will return the saved debtor as their (200 HTTP response) result.
 
-**POST** `https://app.mytourist.cloud/api/debtors`    
-**PUT** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
+**POST** `https://app.mytourist.cloud/api/v1/debtors`    
+**PUT** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
 **FORM Parameters**
 <table>
@@ -60,7 +60,7 @@ You can easally create a new debtor by calling the following URL by the `POST` m
 
 **Example**
 ```bash
-curl --location --request POST 'https://app.mytourist.cloud/api/debtors' \
+curl --location --request POST 'https://app.mytourist.cloud/api/v1/debtors' \
 --header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
 --form 'first_name=Max' \
 --form 'last_name=Musterman' \
@@ -71,7 +71,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/debtors' \
 # Availability API
 To check the availability on a single or all available `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price `rates`.
 
-**GET** `https://app.mytourist.cloud/api/availability?arrival={DATE}&departure={DATE}`
+**GET** `https://app.mytourist.cloud/api/v1/availability?arrival={DATE}&departure={DATE}`
 
 **Query Parameters**
 <table>
@@ -83,7 +83,7 @@ To check the availability on a single or all available `roomtypes` in a specific
 
 **Example**
 ```bash
-curl --location --request GET 'https://app.mytourist.cloud/api/availability?arrival={date}&departure={date}' \
+curl --location --request GET 'https://app.mytourist.cloud/api/v1/availability?arrival={date}&departure={date}' \
 --header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
 ```
 
