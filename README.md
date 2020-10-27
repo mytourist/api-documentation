@@ -47,7 +47,7 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 
 **Example**
 ```bash
-curl --location --request POST 'http://localhost:8004/api/debtors' \
+curl --location --request POST 'https://app.mytourist.cloud/api/debtors' \
 --header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
 --form 'first_name=Max' \
 --form 'last_name=Musterman' \
