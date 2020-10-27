@@ -48,17 +48,17 @@ curl --location --request GET 'https://app.mytourist.cloud/api/availability?arri
 ```JSON
 [
     {
-        "id":"81912063", // ID of the Roomtype.
-        "rooms_available":1, // Exact (live) number of available rooms inside this roomtype.
+        "id":"81912063",                            // ID of the Roomtype.
+        "rooms_available":1,                        // Exact (live) number of available rooms inside this roomtype.
         "name":"Doubleroom Deluxe with balcony",
         "description":"Our best room with an amazing view over the city!",
         "rates":[
             {
-                "id":66118004, // ID of the Price rate.
+                "id":66118004,                      // ID of the Price rate.
                 "rate_available":true,
-                "total_price":200, // Calculated price (without additional bookable addons)
+                "total_price":200,                  // Calculated price (without additional bookable addons)
                 "name":"Conform arrangement",
-                "reasons":[] // Is empty when rate is available.
+                "reasons":[]                        // Is empty when rate is available.
             },
             {
                 "id":82010274,
@@ -66,10 +66,10 @@ curl --location --request GET 'https://app.mytourist.cloud/api/availability?arri
                 "total_price":0,
                 "name":"Bubbles arrangement - Long weekend",
                 "reasons":[
-                    "closedonarrival", // Arrival is not possible for this rate on this day.
-                    "closedondeparture", // Departure is not possible for this rate on this day.
-                    "maxstay", // Number of nights extends the maxstay.
-                    "minstay", // Number of nights is less than minstay.
+                    "closedonarrival",              // Arrival is not possible for this rate on this day.
+                    "closedondeparture",            // Departure is not possible for this rate on this day.
+                    "maxstay",                      // Number of nights extends the maxstay.
+                    "minstay",                      // Number of nights is less than minstay.
                 ]
             }
         ]
