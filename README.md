@@ -12,3 +12,6 @@ REST also implies a nice and clean structure for URLs or endpoints. This means y
 The API key or token must be sent along with each API request, by providing it in the HTTP call’s Authorization header using the Bearer method. For example: a valid Authorization header is `Bearer dHar4XY7LxsDOtmnkVtjNVWXLSlXsM`.
 
 In the example below we use a API key on the GET method of the debtors resource. This method fetches a list of debtors.
+```bash
+curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer dHar4XY7LxsDOtmnkVtjNVWXLSlXsM"
+```
