@@ -33,3 +33,11 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 ### Retrieve a single debtor
 **GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
+### Create new debtor
+**POST** `https://app.mytourist.cloud/api/debtors`
+
+#### Parameters
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
