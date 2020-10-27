@@ -8,7 +8,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Get an API key](#get-an-api-key)
 - [Authentication](#authentication)
 
-### Functions
+### Endpoints
 - [Debtors API](#debtors-api)
 - [Roomtypes API](#roomtypes-api)
 - [Availability API](#availability-api)
