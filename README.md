@@ -34,7 +34,7 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 **GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
 ## Create or Edit a debtor
-You can easally create a new debtor by calling the following URL by the `POST` method. When you like to update an debtor you'll need to use the `PUT` method with the complete form data and `debtor_id` inside the URL.
+You can easally create a new debtor by calling the following URL by the `POST` method. When you want to update any debtor you'll need to use the `PUT` method with the **complete** form data and `debtor_id` inside the URL.
 
 **POST** `https://app.mytourist.cloud/api/debtors`    
 **PUT** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
@@ -47,7 +47,7 @@ You can easally create a new debtor by calling the following URL by the `POST` m
     <tr><td>company_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
 </table>
 
-**Example**
+**Example in bash**
 ```bash
 curl --location --request POST 'https://app.mytourist.cloud/api/debtors' \
 --header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
