@@ -33,13 +33,16 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 ### Retrieve a single debtor
 **GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
-### Create new debtor
-**POST** `https://app.mytourist.cloud/api/debtors`
+### Create or Edit a debtor
+**POST** `https://app.mytourist.cloud/api/debtors`    
+**PUT** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
-#### Parameters
-<table>
+**FORM Parameters**
+<table style="width:100%">
     <tr>
-        <td>TEst</td>
-        <td>TEs2</td>
+        <td>first_name</td><td>required</td><td>-</td>
+        <td>last_name</td><td>required</td><td>-</td>
+        <td>company_name</td><td>optional</td><td>-</td>
+        <td>company_id</td><td>optional</td><td>Chamber / KVK nr.</td>
     </tr>
 </table>
