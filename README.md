@@ -54,10 +54,10 @@ curl --location --request GET 'https://app.mytourist.cloud/api/availability?arri
         "description":"Our best room with an amazing view over the city!",
         "rates":[
             {
-                "id":81912063,
+                "id":66118004,
                 "rate_available":true,
                 "total_price":200,
-                "name":"Defaultprice",
+                "name":"Conform arrangement",
                 "reasons":[]
             },
             {
