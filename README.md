@@ -32,9 +32,47 @@ To check all available `unittypes` on a specific date-range.
 
 **Query Parameters**
 <table>
-    <tr><td>arrival</td><td>required</td><td>YYYY-MM-DD notation</td></tr>    
-    <tr><td>departure</td><td>required</td><td>YYYY-MM-DD notation</td></tr>
+    <tr><td>arrival</td><td>required</td><td>YYYY-MM-DD</td></tr>    
+    <tr><td>departure</td><td>required</td><td>YYYY-MM-DD</td></tr>
+    <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>
 </table>
+
+**Example**
+```bash
+curl --location --request GET 'https://app.mytourist.cloud/api/availability?arrival={date}&departure={date}' \
+--header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
+```
+
+**Results**
+```JSON
+[
+    {
+        "id":"81912063",
+        "rooms_available":1,
+        "name":"Doubleroom Deluxe with balcony",
+        "description":"Our best room with an amazing view over the city!",
+        "rates":[
+            {
+                "id":81912063,
+                "rate_available":true,
+                "total_price":200,
+                "name":"Defaultprice",
+                "reasons":[]
+            },
+            {
+                "id":82010274,
+                "rate_available":false,
+                "total_price":0,
+                "name":"Bubbles arrangement - Long weekend",
+                "reasons":[
+                    "closedonarrival",
+                    "closedondeparture"
+                ]
+            }
+        ]
+    }
+]
+```
 
 # Debtors API
 
