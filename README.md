@@ -39,10 +39,8 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 
 **FORM Parameters**
 <table style="width:100%">
-    <tr>
-        <td>first_name</td><td>required</td><td>-</td>
-        <td>last_name</td><td>required</td><td>-</td>
-        <td>company_name</td><td>optional</td><td>-</td>
-        <td>company_id</td><td>optional</td><td>Chamber / KVK nr.</td>
-    </tr>
+    <tr><td>first_name</td><td>required</td><td>-</td></tr>    
+    <tr><td>last_name</td><td>required</td><td>-</td></tr>
+    <tr><td>company_name</td><td>optional</td><td>-</td></tr>
+    <tr><td>company_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
 </table>
