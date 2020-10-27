@@ -9,8 +9,12 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Authentication](#authentication)
 
 ### Endpoints
+- [Bookings API](#bookings-api)
 - [Debtors API](#debtors-api)
 - [Roomtypes API](#roomtypes-api)
+- [PriceRates API](#price-rates-api)
+- [Invoices API](#invoices-api)
+    - [Make Payments](#make-payments)
 - [Availability API](#availability-api)
 
 ## The MyTourist REST API
