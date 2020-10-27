@@ -1,2 +1,14 @@
 # RESTful API Documentation.
-This documentation list all features of the current version of our API.
+Use the MyTourist API to integrate availability check, debtors and a lot more intro your website or app. MyTourist and your website or app back-end will communicate by sending HTTP requests back and forth. This page provides an overview of the MyTourist API. The topics in the chapter deal with a number of specific aspects of the API. We recommend to read these topics entirely.
+
+If you have any questions about integrating our API, please contact us. We’re happy to help!
+
+## The MyTourist REST API
+The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
+
+REST also implies a nice and clean structure for URLs or endpoints. This means you can reach any part of the MyTourist API on https://app.mytourist.com/api/ adding the name of the resource you want to interact with.
+
+## Authentication
+The API key or token must be sent along with each API request, by providing it in the HTTP call’s Authorization header using the Bearer method. For example: a valid Authorization header is `Bearer dHar4XY7LxsDOtmnkVtjNVWXLSlXsM`.
+
+In the example below we use a API key on the GET method of the debtors resource. This method fetches a list of debtors.
