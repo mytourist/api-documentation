@@ -26,6 +26,9 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 
 ## Debtors API
 
-### GET requests 
-**Complete list of debtors** `https://app.mytourist.cloud/api/debtors`   
-**Single debtor** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
+### List all debtors
+**GET** `https://app.mytourist.cloud/api/debtors`
+
+### Get single debtor
+**GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
+
