@@ -89,19 +89,19 @@ curl --location --request GET 'https://app.mytourist.cloud/api/v1/roomtypes' \
 ```JSON
 [
     {
-        "id":"81912063",
-        "type":"single",
-        "number_of_rooms":1,
-        "name":"Eenpersoonskamer",
-        "description":"Dit is een eenpersoonskamer met uitzicht over het meer.",
+        "id":"81912063",                            // ID of the roomtype
+        "type":"double",                            // single,double,appartement etc..
+        "number_of_rooms":1,                        // Indiviual rooms under this roomtype.
+        "name":"Doubleroom Deluxe with balcony",
+        "description":"Our best room with an amazing view over the city!",
         "rates":[
             {
-                "id":"81912063",
-                "name":"Standaardprijs"
+                "id":"66118004",                    // ID of the price rate
+                "name":"Conform arrangement",
             },
             {
-                "id":"82010274",
-                "name":"Niet standard"
+                "id":"82010274",                    // ID of the price rate
+                "name":"Bubbles arrangement - Long weekend",
             }
         ]
     },
