@@ -7,7 +7,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [The MyTourist REST API](#the-mytourist-rest-api)
 - [Get an API key](#get-an-api-key)
 - [Authentication](#authentication)
-    - [Debtors API](#debtor-api)
+    - [Debtors API](#debtors-api)
 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
@@ -37,7 +37,9 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 **POST** `https://app.mytourist.cloud/api/debtors`
 
 #### Parameters
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+<table>
+    <tr>
+        <td>TEst</td>
+        <td>TEs2</td>
+    </tr>
+</table>
