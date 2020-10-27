@@ -25,22 +25,32 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
 ```
 
-## Debtors API
+# Debtors API
 
-### List all debtors
+## List all debtors
 **GET** `https://app.mytourist.cloud/api/debtors`
 
-### Retrieve a single debtor
+## Retrieve a single debtor
 **GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
-### Create or Edit a debtor
+## Create or Edit a debtor
 **POST** `https://app.mytourist.cloud/api/debtors`    
 **PUT** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
 **FORM Parameters**
-<table style="width:100%">
+<table>
     <tr><td>first_name</td><td>required</td><td>-</td></tr>    
     <tr><td>last_name</td><td>required</td><td>-</td></tr>
     <tr><td>company_name</td><td>optional</td><td>-</td></tr>
     <tr><td>company_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
 </table>
+
+**Example**
+```bash
+curl --location --request POST 'http://localhost:8004/api/debtors' \
+--header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
+--form 'first_name=Max' \
+--form 'last_name=Musterman' \
+--form 'company_name=MyTourist' \
+--form 'company_chamber_id=123456789'
+```
