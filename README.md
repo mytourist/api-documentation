@@ -26,7 +26,7 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 ```
 
 # Availability API
-To check all available `unittypes` on a specific date-range. 
+To check the availability on a single or all available `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price `rates`.
 
 **GET** `https://app.mytourist.cloud/api/availability?arrival={DATE}&departure={DATE}`
 
@@ -34,6 +34,7 @@ To check all available `unittypes` on a specific date-range.
 <table>
     <tr><td>arrival</td><td>required</td><td>YYYY-MM-DD</td></tr>    
     <tr><td>departure</td><td>required</td><td>YYYY-MM-DD</td></tr>
+    <tr><td>roomtype_id</td><td>optional</td><td>The API will only return the results for this particular roomtype.</td></tr>
     <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>
 </table>
 
@@ -70,6 +71,9 @@ curl --location --request GET 'https://app.mytourist.cloud/api/availability?arri
                 ]
             }
         ]
+    },
+    {
+        ...
     }
 ]
 ```
