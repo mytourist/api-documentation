@@ -25,6 +25,17 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
 ```
 
+# Availability API
+To check all available `unittypes` on a specific date-range. 
+
+**GET** `https://app.mytourist.cloud/api/availability?arrival={DATE}&departure={DATE}`
+
+**Query Parameters**
+<table>
+    <tr><td>arrival</td><td>required</td><td>YYYY-MM-DD notation</td></tr>    
+    <tr><td>departure</td><td>required</td><td>YYYY-MM-DD notation</td></tr>
+</table>
+
 # Debtors API
 
 ## List all debtors
@@ -33,8 +44,8 @@ curl -X GET https://app.mytourist.cloud/api/debtors -H "Authorization: Bearer $2
 ## Retrieve a single debtor
 **GET** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
 
-## Create or Edit a debtor
-You can easally create a new debtor by calling the following URL by the `POST` method. When you want to update any debtor you'll need to use the `PUT` method with the **complete** form data and `debtor_id` inside the URL.
+## Create or update a debtor
+You can easally create a new debtor by calling the following URL by the `POST` method. When you want to update any debtor you'll need to use the `PUT` method with the **complete** form data and `debtor_id` inside the URL. Both endpoints will return the saved debtor as their (200 HTTP response) result.
 
 **POST** `https://app.mytourist.cloud/api/debtors`    
 **PUT** `https://app.mytourist.cloud/api/debtors/{DEBTOR_ID}`
