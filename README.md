@@ -10,7 +10,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 
 ### Functions
 - [Debtors API](#debtors-api)
-- [Availability API](/availability-api.html)
+- [Availability API](/api-documentation/availability-api.html)
 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
