@@ -26,11 +26,22 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer
 
 # Complite list of endpoints.
 
-### [Availability](availability.html)
-Check for available roomtypes in a predefined date range. This enpoint will return the roomtypes and available Rate plan ID's.
+### [Availability API](availability.html)
+Check for available roomtypes in a predefined date range. This enpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
-- [Bookings](bookings.html)
-- [Debtors](debtors.html)
-- [Invoicing](invoicing.html)
-- [PriceRates](price-rates.html)
-- [Roomtypes](roomtypes.html)
+### [Bookings API](bookings.html)
+Get booking by ID's and change their status, attach/dettach debtors, manage individual guests and select the right price rates. [Go to the documentation](bookings.html)
+
+### [Debtors API](debtors.html)
+Obtain a single Debtor or obtain a list of your Debtors based on some filtering. You can also manage their address and contact information. [Go to the documentation](debtors.html)
+
+### [Invoicing API](invoicing.html)
+List invoices, manage products and logies, set right VAT Tax id's and register payments. [Go to the documentation](invoicing.html)
+
+### [Products API](products.html)
+List and show single products. Manage their names and pricing. Attach them to an price rate as fixed product or attach product to an booking. [Go to the documentation](products.html)
+
+### [PriceRates API](price-rates.html)
+
+
+### [Roomtypes](roomtypes.html)
