@@ -26,7 +26,7 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer
 
 # Complite list of endpoints.
 
-#### [Availability](availability.html)
+### [Availability](availability.html)
 Check for available roomtypes in a predefined date range. This enpoint will return the roomtypes and available Rate plan ID's.
 
 - [Bookings](bookings.html)
