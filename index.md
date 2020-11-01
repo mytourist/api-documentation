@@ -24,11 +24,13 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
 ```
 
-### Endpoints
-- [Bookings](#bookings-api)
-- [Debtors](#debtors-api)
-- [Roomtypes](#roomtypes-api)
-- [PriceRates](#price-rates-api)
-- [Invoices](#invoices-api)
-    - [Make Payments](#make-payments)
-- [Availability](#availability-api)
+# Complite list of endpoints.
+
+#### [Availability](availability.html)
+Check for available roomtypes in a predefined date range. This enpoint will return the roomtypes and available Rate plan ID's.
+
+- [Bookings](bookings.html)
+- [Debtors](debtors.html)
+- [Invoicing](invoicing.html)
+- [PriceRates](price-rates.html)
+- [Roomtypes](roomtypes.html)
