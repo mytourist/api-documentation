@@ -129,7 +129,7 @@ The endpoints will return always the created or updated invoice (HTTP 200)
 </table>
 
 ## Manage product lines
-You can use the pre defined products you have already been added in MyTourist or set your own product line in this invoice.
+You can use the pre defined products you have already been added in MyTourist or set your own product line in this invoice. Both add and update calls will return (HTTP 200) the full result of the line you just created/updated.
 
 **POST (Add)** 
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines`
@@ -138,11 +138,10 @@ You can use the pre defined products you have already been added in MyTourist or
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`
 
 **Parameters**
-
 <table>
     <tr><td>number</td><td>required</td><td>Integer</td><td>Number of items</td></tr>
     <tr><td>price_incl</td><td>required</td><td>Float</td><td>Price per item</td></tr>
-    <tr><td>tax_id</td><td>optional</td><td>Integer</td><td>@tax_id <a href="#">Tax rates API</a></td></tr>
+    <tr><td>tax_id</td><td>optional</td><td>Integer</td><td>@tax_id <a href="#">Tax rates API</a>. When product_id has been added, it wil take the default value of this Product.</td></tr>
     <tr><td>product_id</td><td>optional</td><td>Integer</td><td>@product_id  <a href="#">Products API</a></td></tr>
     <tr><td>description</td><td>required*</td><td>String</td><td>When no product_id has been set.</td></tr>
 </table>
