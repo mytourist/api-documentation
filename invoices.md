@@ -107,7 +107,7 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
 ## Add or Update a **simple invoice**
 Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated. 
 
-The endpoints below will return always the created or updated invoice (HTTP 200).
+The endpoints below (except DELETE) will return always the created or updated invoice (HTTP 200).
 
 **POST (Create)**    
 `https://app.mytourist.cloud/api/v1/invoices`   
@@ -116,17 +116,17 @@ The endpoints below will return always the created or updated invoice (HTTP 200)
 **DELETE (Removes proforma invoices)**   
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`      
 
-**POST (Add Invoice ID)**    
+**POST (Add Invoice ID, Make final Invoice)**    
 `https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
 *Your freshly created invoice has always the `proforma` type. Call the URL above to attach an invoice ID from your administration. The state will automatically change from proforma to invoice state. An invoice is not removable after this action.* 
 
 **Parameters**
 <table>
-    <tr><td>contact_id</td><td>optional</td><td></td></tr>
+    <tr><td>debtor_id</td><td>optional</td><td></td></tr>
     <tr><td>language</td><td>optional</td><td>Account standard or `nl/es/en/fr`</td></tr>
     <tr><td>footnote</td><td>optional</td><td>Account standard or own text</td></tr>
+    <tr><td>invoiced_at</td><td>optional</td><td>DATE: YYYYMMDD, (will always be updated when invoice ID is attached afterwards)</td></tr>
 </table>
-
 
 ## Manage product lines
 
