@@ -10,7 +10,7 @@ This API endpoint let you manage your debtors. [Parameters](#available-parameter
 **Index:** 
 - [List all debtors](#list-all-debtors)
 - [Retrieve a single debtor](#retrieve-a-single-debtor)
-- [Create / Update a debtor](#create_update_a_debtor)
+- [Create / Update a debtor](#create--update-a-debtor)
 
 ## List all debtors
 Get a list of all your debtors returned in `JSON` format.     
