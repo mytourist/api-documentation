@@ -112,13 +112,7 @@ The endpoints will return always the created or updated invoice (HTTP 200)
 **POST (Create)**    
 `https://app.mytourist.cloud/api/v1/invoices`   
 **POST (Update)**    
-`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`   
-**DELETE (Removes proforma invoices)**   
-`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`      
-
-**POST (Add Invoice ID, Make final Invoice)**    
-`https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
-*Your freshly created invoice has always the `proforma` type. Call the URL above to attach an invoice ID from your administration. The state will automatically change from proforma to invoice state. An invoice is not removable after this action.* 
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`  
 
 **Parameters**
 <table>
@@ -128,6 +122,14 @@ The endpoints will return always the created or updated invoice (HTTP 200)
     <tr><td>invoiced_at</td><td>optional</td><td>DATE: YYYYMMDD, (will always be updated when invoice ID is attached afterwards)</td></tr>
 </table>
 
+**DELETE (Removes proforma invoices)**   
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`      
+
+**POST (Add Invoice ID, Make final Invoice)**    
+`https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
+*Your freshly created invoice has always the `proforma` type. Call the URL above to attach an invoice ID from your administration. The state will automatically change from proforma to invoice state. An invoice is not removable after this action.* 
+
+
 ## Manage product lines
 You can use the pre defined products you have already been added in MyTourist or set your own product line in this invoice. Both add and update calls will return (HTTP 200) the full result of the line you just created/updated.
 
@@ -136,9 +138,6 @@ You can use the pre defined products you have already been added in MyTourist or
 
 **POST (Update)**    
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}` 
-
-**DELETE (Remove line)**    
-`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`    
 
 **Parameters**
 <table>
@@ -153,7 +152,8 @@ You can use the pre defined products you have already been added in MyTourist or
 
 \* use these when no `product_id` is not attached to the rule.
 
-
+**DELETE (Remove line)**    
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`    
 
 
 ## Manage Payments
