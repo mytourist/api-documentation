@@ -138,6 +138,7 @@ You can use the pre defined products you have already been added in MyTourist or
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`
 
 **Parameters**
+s
 <table>
     <tr><td>number</td><td>required</td><td>Integer</td><td>Number of items</td></tr>
     <tr><td>price_incl</td><td>required</td>><td>Float</td><td>Price per item</td></tr>
