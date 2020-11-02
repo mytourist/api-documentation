@@ -51,7 +51,7 @@ curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
 }'
 ```
 
-**Available Parameters**
+## Available Parameters
 <table>
     <tr><td>first_name</td><td>required</td><td>When POST</td></tr>    
     <tr><td>last_name</td><td>required</td><td>When POST</td></tr>
