@@ -30,7 +30,8 @@ Get a list of all your debtors returned in `JSON` format.
 ```
 
 ## Retrieve a single debtor
-Get a single Debtor returned in `JSON` format.    
+Get a single Debtor returned in `JSON` format. We also add all the bookings attached to this debtor and also all invoices.
+  
 **GET** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
 
@@ -43,7 +44,23 @@ Get a single Debtor returned in `JSON` format.
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
-    ...
+    "...":"...",
+
+    "bookings":[
+        {
+            "state":"archived",
+            "unique":231920102956,
+            "arrival":"20201008",
+            "departure":"20201011"
+        }
+    ],
+    "invoices":[
+        {
+            "state":"open",
+            "type":"proforma",
+            "unique":"P1120078"
+        }
+    ]
 }
 ```
 
