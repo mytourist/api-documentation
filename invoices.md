@@ -1,5 +1,13 @@
+---
+title: Invoices
+layout: default
+---
+### [Back to overview](index.html#start-developing-testing-and-deploy)
+---
 # Invoices API
 Invoices are (by default) automatically created when a booking is added to MyTourist. But you can also create single invoices witch has no relations with any of your bookings. This can be useful when you'll have additional business aspects. Think as `boat or bike rentals`,`bars` or `activities`.
+
+**Possibilities** [List invoices](#list-invoice), [Register a payment](#register-payment), [Remove a payment](#remove-payment)
 
 ## List invoices
 Be aware the `from` and `until` parameters are required to prevent heavy server load on fetching big loads of data. You can fetch a maximum of 36 days each time.
