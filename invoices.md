@@ -135,6 +135,9 @@ You can use the pre defined products you have already been added in MyTourist or
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines`    
 
 **POST (Update)**    
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}` 
+
+**DELETE (Remove line)**    
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`    
 
 **Parameters**
@@ -148,7 +151,7 @@ You can use the pre defined products you have already been added in MyTourist or
    <tr><td>tax_id</td><td>optional*</td><td>Integer</td><td>@tax_id <a href="#">Tax rates API</a></td></tr> 
 </table>
 
-\* only required on lines without `product_id` attached.
+\* use these when no `product_id` is not attached to the rule.
 
 
 
