@@ -31,7 +31,7 @@ Get a list of all your debtors returned in `JSON` format.
 
 ## Retrieve a single debtor
 Get a single Debtor returned in `JSON` format. We also add all the bookings attached to this debtor and also all invoices.
-  
+
 **GET** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
 
@@ -65,17 +65,14 @@ Get a single Debtor returned in `JSON` format. We also add all the bookings atta
 ```
 
 ## Create a debtor
-You can easally create a new debtor by calling the following URL by the `POST` method. This endpoints will return the saved debtor as their (200 HTTP response) result.
+You can create a new debtor by posting to the following URL. This endpoints will return (when success) the saved debtor (200 HTTP response).
 
 **POST** `https://app.mytourist.cloud/api/v1/debtors`    
-
 
 ## Update a debtor
 When you want to update any debtor you'll need to use the same `POST` method with the `debtor_id` appended to the URL. 
 
 **POST** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
-
-_You can do either overwrite the whole JSON result with your parameters and push it back in JSON format (use the header `Content-Type: application/json`) or just change individual; fields by using the `formData` method. When you don't call particular parameters we won't do anything and ignoring this parameter. When you put a parameter as an empty string we will emptying this parameter inside our database also._
 
 ## Available Parameters
 <table>
