@@ -43,7 +43,8 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
          "id":"2319201102165",
          "type":"logies",
          "number":1,
-         "description":"Doubleroom with balcony - 7 night(s) - 2 guest(s) - 04\/11'20 11\/11'20",
+         "description":"Doubleroom with balcony - \
+         7 night(s) - 2 guest(s) - 04\/11'20 11\/11'20",
          "price_incl_vat":"560.00",
          "price_excl_vat":"504.50",
          "tax_amount":"55.50",
