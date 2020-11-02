@@ -27,7 +27,6 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer
 ## Start developing, testing and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do somethimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
-
 ### [Availability API](availability.html)
 Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
@@ -47,3 +46,4 @@ List and show single products. Manage their names and pricing. Attach them to an
 
 
 ### [Roomtypes](roomtypes.html)
+Roomtypes contains one or more indiviual rooms. All rooms are grouped inside MyTourist to keep the OTA defined structure in place. [Go to the documentation](roomtypes.html)

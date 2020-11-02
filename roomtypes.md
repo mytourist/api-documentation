@@ -8,13 +8,7 @@ Retreive all `roomtypes` created in MyTourist. The results will included all att
     <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>
 </table>
 
-**Example**
-```bash
-curl --location --request GET 'https://app.mytourist.cloud/api/v1/roomtypes' \
---header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
-```
-
-**Results**
+**Example results**
 ```JSON
 [
     {
