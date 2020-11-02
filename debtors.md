@@ -7,6 +7,11 @@ layout: default
 # Debtors API
 This API endpoint let you manage your debtors. [Parameters](#available-parameters) can be found on the very end of this page.
 
+**Index:** 
+- [List all debtors](#list-all-debtors)
+- [Retrieve a single debtor](#retrieve-a-single-debtor)
+- [Create / Update a debtor](#create_update_a_debtor)
+
 ## List all debtors
 Get a list of all your debtors returned in `JSON` format.     
 **GET** `https://app.mytourist.cloud/api/v1/debtors`

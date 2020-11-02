@@ -34,10 +34,14 @@ Check for available roomtypes in a predefined date range. This endpoint will ret
 Get booking by ID's and change their status, attach/detach debtors, manage individual guests and select the right price rates. [Go to the documentation](bookings.html)
 
 ### [Debtors API](debtors.html)
-Obtain a single Debtor or obtain a list of your Debtors based on some filtering. You can also manage their address and contact information. [Go to the documentation](debtors.html)
+Manage your debtors easly from this endpoint. [Go to the documentation](debtors.html)
 
 ### [Invoices API](invoices.html)
-List invoices, manage products and logies, set right VAT Tax id's and register payments. [Go to the documentation](invoicing.html)
+With this endpoint you can manage your invoices, payments and product lines. [Go to the documentation](invoices.html) or jump direct to [List invoices](invoices.html#list-invoices), [Retrieve a single Invoice](invoices.html#retrieve-a-single-invoice), [Add or Update a simple invoice](invoices.html#add-or-update-a-simple-invoice), [Make invoice official by adding an unique ID](invoices.html#make-invoice-official-by-adding-an-unique-id), [Manage product lines](invoices.html#manage-product-lines), [Manage Payments](invoices.html#manage-payments), [Download invoices](invoices.html#download-invoice).
+
+
+
+
 
 ### [Products API](products.html)
 List and show single products. Manage their names and pricing. Attach them to an price rate as fixed product or attach product to an booking. [Go to the documentation](products.html)
