@@ -41,6 +41,7 @@ With this endpoint you can manage your invoices, payments and product lines. [Go
 
 
 # Coming soon ..
+We currently migrating our API to this centralized API. Please come back later..
 
 ### [Bookings API](#)
 ### [Products API](#)
