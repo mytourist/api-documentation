@@ -7,7 +7,7 @@ layout: default
 # Invoices API
 Invoices are (by default) automatically created when a booking is added to MyTourist. Then the logies price, tourist tax and fixed products will be automatically calculated. But you can also create single invoices witch has no relations with any of your bookings. This can be useful when you'll have additional business aspects. Think as `boat or bike rentals`,`bars` or `activities`.
 
-**Possibilities** [List invoices](#list-invoice), [Register a payment](#register-payment), [Remove a payment](#remove-payment)
+**Possibilities described below:** [List invoices](#list-invoices), [Register a payment](#register-payment), [Remove a payment](#remove-payment)
 
 ## List invoices
 Be aware the `from` and `until` parameters are required to prevent heavy server load on fetching big loads of data. You can fetch a maximum of 36 days each time.
@@ -105,7 +105,20 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
 ```
 
 ## Add or Update a **simple invoice**
-Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated.
+Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated. 
+
+**POST (Create)** `https://app.mytourist.cloud/api/v1/invoices`
+**POST (Update)** `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`
+
+*Hint: invoices will always start as proforma/concept state. After you added your product line(s) you can call the `make final call`.*
+
+**Parameters**
+<table>
+    <tr><td>contact_id</td><td>optional</td><td></td></tr>
+    <tr><td>language</td><td>optional</td><td>Account standard or `nl/es/en/fr`</td></tr>
+    <tr><td>footnote</td><td>optional</td><td>Account standard or own text</td></tr>
+</table>
+
 
 ## Manage product lines
 
