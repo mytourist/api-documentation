@@ -16,6 +16,9 @@ REST also implies a nice and clean structure for URLs or endpoints. This means y
 ## Get an API key
 The first thing you need is a API key. Each location/company profile has a API key printed inside the API page found in preferences. Of course it’s very important to keep your API key secure. Do not ever share them. 
 
+## Use at your own risk / No warranty
+We validate each request based on basic validation rules and you will operate outside the GUI of MyTourist with all the nice checks inside. You are responsibble for the data you will add or change via the API. Each call is logged and kept for at least 24 month. We strongly recommend to test your API first in an dummy company profile before you use your production based company profile. Inside your account settings you are free to manage your company profiles. If your connection causes data to become corrupt, we can charge you to restore a backup of your company profile.
+
 ## Authentication
 The API key or token must be sent along with each API request, by providing it in the HTTP call’s Authorization header using the Bearer method. For example: a valid Authorization header is `Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6`.
 
@@ -43,3 +46,11 @@ With this endpoint you can manage your invoices, payments and product lines. [Go
 ### [Products API](#)
 ### [PriceRates API](#)
 ### [Roomtypes](#)
+
+
+# HTTP responses table
+<table>
+    <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
+    <tr><td>400</td><td>FAILED</td><td>Not all required parameters/fields are set to execute this request.</td></tr>
+    <tr><td>404</td><td>FAILED</td><td>URL incorrect or requested data no longer exists.</td></tr>
+</table>
