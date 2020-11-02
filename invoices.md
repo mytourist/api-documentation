@@ -46,8 +46,8 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
       }
    ],
    "tourist_tax":{
-      "price":"0.00",
-      "guests":0,
+      "amount":"0.00",
+      "based_on_guests":0,
       "outdated":false
    },
    "vat_lines":{
