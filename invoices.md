@@ -141,10 +141,10 @@ You can use the pre defined products you have already been added in MyTourist or
 s
 <table>
     <tr><td>number</td><td>required</td><td>Integer</td><td>Number of items</td></tr>
-    <tr><td>price_incl</td><td>required</td>><td>Float</td><td>Price per item</td></tr>
-    <tr><td>tax_id</td><td>optional</td><td>Integer</td><td>@tax_id [More info](../tax-rates.html)</td></tr>
-    <tr><td>product_id</td><td>optional</td>><td>Integer</td><td>@product_id</td></tr>
-    <tr><td>description</td><td>required*</td>><td>String</td><td>When no product_id has been set.</td></tr>
+    <tr><td>price_incl</td><td>required</td><td>Float</td><td>Price per item</td></tr>
+    <tr><td>tax_id</td><td>optional</td><td>Integer</td><td>@tax_id <a href="#">Tax rates API</a></td></tr>
+    <tr><td>product_id</td><td>optional</td><td>Integer</td><td>@product_id  <a href="#">Products API</a></td></tr>
+    <tr><td>description</td><td>required*</td><td>String</td><td>When no product_id has been set.</td></tr>
 </table>
 
 
