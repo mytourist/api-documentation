@@ -4,7 +4,7 @@
 This API endpoint let you manage your debtors. [Parameters](#available-parameters) can be found on the very end of this page.
 
 ## List all debtors
-Get a list of all your debtors returned in `JSON` format. 
+Get a list of all your debtors returned in `JSON` format.     
 **GET** `https://app.mytourist.cloud/api/v1/debtors`
 
 **Results**
@@ -16,7 +16,7 @@ Get a list of all your debtors returned in `JSON` format.
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
-    // ...
+    "...":"..."
 },
 {
     "debtor_id":"23192010300",
@@ -25,12 +25,12 @@ Get a list of all your debtors returned in `JSON` format.
     "first_name":"Daniel",
     "last_name":"Musterman",
     "address":"streetname 66",
-    // ...
+    "...":"..."
 }
 ```
 
 ## Retrieve a single debtor
-Get a single Debtor returned in `JSON` format.
+Get a single Debtor returned in `JSON` format.    
 **GET** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
 
@@ -43,7 +43,7 @@ Get a single Debtor returned in `JSON` format.
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
-    // ...
+    ...
 }
 ```
 
