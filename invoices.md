@@ -5,7 +5,7 @@ layout: default
 ### [Back to overview](index.html#start-developing-testing-and-deploy)
 ---
 # Invoices API
-Invoices are (by default) automatically created when a booking is added to MyTourist. But you can also create single invoices witch has no relations with any of your bookings. This can be useful when you'll have additional business aspects. Think as `boat or bike rentals`,`bars` or `activities`.
+Invoices are (by default) automatically created when a booking is added to MyTourist. Then the logies price, tourist tax and fixed products will be automatically calculated. But you can also create single invoices witch has no relations with any of your bookings. This can be useful when you'll have additional business aspects. Think as `boat or bike rentals`,`bars` or `activities`.
 
 **Possibilities** [List invoices](#list-invoice), [Register a payment](#register-payment), [Remove a payment](#remove-payment)
 
@@ -104,3 +104,13 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
 }
 ```
 
+## Add or Update a **simple invoice**
+Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated.
+
+## Manage product lines
+
+## Manage Payments
+
+## Send invoice by email
+
+## Download invoice
