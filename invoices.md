@@ -170,7 +170,10 @@ You can easaly register payments to an invoice. Be aware that we don't send any 
 **DELETE (Remove payment)**       
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/payments/{PAYMENT_ID}`    
 
-
-## Send invoice by email
-
 ## Download invoice
+This GET request will return a PDF file with the invoice in the current state.
+
+*Note; your authentication header is still required to download invoices.*
+
+**GET**      
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/download/pdf` 
