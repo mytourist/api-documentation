@@ -165,6 +165,8 @@ You can easaly register payments to an invoice. Be aware that we don't send any 
 **Parameters**
 <table>
    <tr><td>payment_type</td><td>required</td><td>bank_transfer, bank_card, credit_card, cash, voucher or channel</td></tr>
+   <tr><td>amount</td><td>required</td><td>Float: 00.00, To credit you can also push a minus value</td></tr>
+   <tr><td>description</td><td>optional</td><td>String</td></tr>
 </table>
 
 **DELETE (Remove payment)**       
