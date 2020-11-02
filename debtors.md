@@ -37,6 +37,7 @@ curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
 --form 'address=Previewstreet 66 Block A' \
 --form 'note=This is an test note'
 ```
+
 **Example with `JSON`**
 ```bash
 curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
