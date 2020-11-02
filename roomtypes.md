@@ -1,4 +1,13 @@
+---
+title: Debtors
+layout: default
+---
+### [Back to overview](index.html#start-developing-testing-and-deploy)
+---
 # Roomtypes API
+Roomtypes are groups of rooms like eg. "Doubleroom" this roomtype can contains "Room 6 1th. floor" & "Room 4 3th floor". B&B's has often not multiple rooms and most of the time their roomtype name is exact the same as the room one.
+
+## List all roomtypes
 Retreive all `roomtypes` created in MyTourist. The results will included all attached price `rates`.
 
 **GET** `https://app.mytourist.cloud/api/v1/roomtypes`
