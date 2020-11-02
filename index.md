@@ -24,7 +24,9 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
 ```
 
-# Complite list of endpoints.
+## Start developing, testing and Deploy
+By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of developing any connection to us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
+
 
 ### [Availability API](availability.html)
 Check for available roomtypes in a predefined date range. This enpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
