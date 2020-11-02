@@ -64,15 +64,13 @@ Get a single Debtor returned in `JSON` format. We also add all the bookings atta
 }
 ```
 
-## Create a debtor
-You can create a new debtor by posting to the following URL. This endpoints will return (when success) the saved debtor (200 HTTP response).
+## Create / Update a debtor
+You can create or update a debtor by posting to the following URL. This endpoints will return (when success) the saved debtor (200 HTTP response). You can either post the full JSON file or single individual fields. When the field is posted we always overwrite them. When a field is not posten trough the API we won't overwrite is and keep the existing data.
 
-**POST** `https://app.mytourist.cloud/api/v1/debtors`    
+**POST (Create)** `https://app.mytourist.cloud/api/v1/debtors`   
+**POST (Update)** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
-## Update a debtor
-When you want to update any debtor you'll need to use the same `POST` method with the `debtor_id` appended to the URL. 
 
-**POST** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
 ## Available Parameters
 <table>
