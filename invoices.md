@@ -125,10 +125,11 @@ The endpoints will return always the created or updated invoice (HTTP 200)
 **DELETE (Removes proforma invoices)**   
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`      
 
+## Make invoice official by adding an unique ID.
+Your freshly created invoice has always the `proforma` type. Call the URL below to attach automatically the next invoice ID from your administration. The state of your Invoice will automatically change from proforma to invoice. Invoices with an official invoiceID are not removable and can only be credited afterwards.
+
 **POST (Add Invoice ID, Make final Invoice)**    
 `https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
-*Your freshly created invoice has always the `proforma` type. Call the URL above to attach an invoice ID from your administration. The state will automatically change from proforma to invoice state. An invoice is not removable after this action.* 
-
 
 ## Manage product lines
 You can use the pre defined products you have already been added in MyTourist or set your own product line in this invoice. Both add and update calls will return (HTTP 200) the full result of the line you just created/updated.
