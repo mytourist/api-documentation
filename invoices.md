@@ -107,10 +107,11 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
 ## Add or Update a **simple invoice**
 Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated. 
 
-**POST (Create)** `https://app.mytourist.cloud/api/v1/invoices`
-**POST (Update)** `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`
+**POST (Create)** `https://app.mytourist.cloud/api/v1/invoices`   
+**POST (Update)** `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`   
 
-*Hint: invoices will always start as proforma/concept state. After you added your product line(s) you can call the `make final call`.*
+**POST (Add Invoice ID)** `https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
+*Call the `Add Invoice ID` to attach an officival invoice ID. The state will automatically change from proforma to invoice state.* 
 
 **Parameters**
 <table>
