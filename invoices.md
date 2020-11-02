@@ -109,9 +109,10 @@ Simple invoices are invoices created *without any bookings attached.* This becom
 
 **POST (Create)** `https://app.mytourist.cloud/api/v1/invoices`   
 **POST (Update)** `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`   
+**DELETE (Removes proforma invoices)** `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`   
 
 **POST (Add Invoice ID)** `https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
-*Call the `Add Invoice ID` to attach an officival invoice ID. The state will automatically change from proforma to invoice state.* 
+*Your freshly created invoice has always the `proforma` type. Call the URL above to attach an invoice ID from your administration. The state will automatically change from proforma to invoice state. An invoice is not removable after this action.* 
 
 **Parameters**
 <table>
