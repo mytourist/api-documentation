@@ -27,7 +27,7 @@ When you want to update any debtor you'll need to use the same `POST` method wit
 
 **POST** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
-_You can do either rewrite the whole block of parameters and push it back or just put the fields you want to change. When you don't call particular paramaters we won't do anything and ignoring this parameter. When you put a parameter as `null` we will emtpying this parameter inside our database also._
+_You can do either overwrite the whole JSON result with your parameters and push it back in JSON format (use the header `Content-Type: application/json`) or just change individua; fields by using the `formData` method. When you don't call particular paramaters we won't do anything and ignoring this parameter. When you put a parameter as an empty string we will emtpying this parameter inside our database also._
 
 ```bash
 curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
