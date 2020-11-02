@@ -70,12 +70,10 @@ You can create or update a debtor by posting to the following URL. This endpoint
 **POST (Create)** `https://app.mytourist.cloud/api/v1/debtors`   
 **POST (Update)** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
-
-
-## Available Parameters
+### Available Parameters
 <table>
-    <tr><td>first_name</td><td>required</td><td>When POST</td></tr>    
-    <tr><td>last_name</td><td>required</td><td>When POST</td></tr>
+    <tr><td>first_name</td><td>required</td><td>when creating debtor</td></tr>    
+    <tr><td>last_name</td><td>required</td><td>when creating debtor</td></tr>
     <tr><td>company_name</td><td>optional</td><td>-</td></tr>
     <tr><td>company_chamber_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
     <tr><td>vat_id</td><td>optional</td><td></td></tr>
