@@ -157,6 +157,19 @@ You can use the pre defined products you have already been added in MyTourist or
 
 
 ## Manage Payments
+You can easaly register payments to an invoice. Be aware that we don't send any notifications when you registering any payments at this point. You can create and remove payments.
+
+**POST (Add)**      
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/payments`    
+
+**Parameters**
+<table>
+   <tr><td>payment_type</td><td>required</td><td>bank_transfer, bank_card, credit_card, cash, voucher or channel</td></tr>
+</table>
+
+**DELETE (Remove payment)**       
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/payments/{PAYMENT_ID}`    
+
 
 ## Send invoice by email
 
