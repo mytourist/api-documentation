@@ -29,6 +29,7 @@ When you want to update any debtor you'll need to use the same `POST` method wit
 
 _You can do either overwrite the whole JSON result with your parameters and push it back in JSON format (use the header `Content-Type: application/json`) or just change individua; fields by using the `formData` method. When you don't call particular paramaters we won't do anything and ignoring this parameter. When you put a parameter as an empty string we will emtpying this parameter inside our database also._
 
+**Example with `formData`**
 ```bash
 curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
 --header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
@@ -36,7 +37,16 @@ curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
 --form 'address=Previewstreet 66 Block A' \
 --form 'note=This is an test note'
 ```
-
+**Example with `JSON`**
+```bash
+curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
+--header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "first_name": "max",
+    "address": "Previewstreet 666 Block A"
+}'
+```
 
 **Available Parameters**
 <table>
