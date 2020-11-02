@@ -28,6 +28,12 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
     <tr><td>credited</td><td>The total amount to pay is credited with an extra credit invoice.</td></tr>
 </table>
 
+**Product Line types**
+<table>
+    <tr><td>logies</td><td>This line will calculated automatically by MyTourist. If you want to force this amount, you'll need to set this amount inside the booking.</td></tr>
+    <tr><td>product</td><td>Can be a product managed inside MyTourist or an manually added product.</td></tr>
+</table>
+
 **JSON example Result**
 ```json
 {
@@ -40,7 +46,7 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
    "footnote":"",
    "product_lines":[
       {
-         "id":"2319201102165",
+         "id":"2319201102165", // Line ID
          "type":"logies",
          "number":1,
          "description":"Doubleroom with balcony - \
@@ -52,13 +58,14 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
       },
       {
          "id":"2319201102164",
+         "product_id":null,  // Manually created
          "type":"product",
          "number":8,
          "description":"Bottle of red wine",
          "price_incl_vat":"352.00",
          "price_excl_vat":"317.12",
          "tax_amount":"34.88",
-         "tax_rate":"11.00"
+         "tax_rate":"11.00",         
       }
    ],
    "tourist_tax":{
@@ -67,7 +74,7 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
       "outdated":false
    },
    "vat_lines":{
-      "11":90.38
+      "11":90.38 // Rate + value
    },
    "payments":[
       {
@@ -88,8 +95,4 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
    }
 }
 ```
-
-
-## Create single invoice __without__ a booking attached.
-<span style="border:1px solid #f1f1f1; padding:3px;"><b>GET</b> https://app.mytourist.cloud/api/invoice/{id}</span>
 
