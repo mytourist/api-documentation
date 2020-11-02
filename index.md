@@ -36,7 +36,7 @@ Get booking by ID's and change their status, attach/detach debtors, manage indiv
 ### [Debtors API](debtors.html)
 Obtain a single Debtor or obtain a list of your Debtors based on some filtering. You can also manage their address and contact information. [Go to the documentation](debtors.html)
 
-### [Invoicing API](invoicing.html)
+### [Invoices API](invoices.html)
 List invoices, manage products and logies, set right VAT Tax id's and register payments. [Go to the documentation](invoicing.html)
 
 ### [Products API](products.html)
