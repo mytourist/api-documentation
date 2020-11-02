@@ -16,10 +16,16 @@ Get a list of all your debtors returned in `JSON` format.
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
-    ...
+    // ...
 },
 {
-    ...
+    "debtor_id":"23192010300",
+    "company_name":null,
+    "company_chamber_id":null,
+    "first_name":"Daniel",
+    "last_name":"Musterman",
+    "address":"streetname 66",
+    // ...
 }
 ```
 
@@ -37,7 +43,7 @@ Get a single Debtor returned in `JSON` format.
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
-    ...
+    // ...
 }
 ```
 
