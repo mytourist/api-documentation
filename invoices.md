@@ -9,6 +9,7 @@ Invoices are (by default) automatically created when a booking is added to MyTou
 
 **Index:** 
 - [List invoices](#list-invoices)
+- [Retrieve a single Invoice](#retrieve-a-single-invoice)
 - [Add or Update a simple invoice](#add-or-update-a-simple-invoice)
 - [Make invoice official by adding an unique ID](#make-invoice-official-by-adding-an-unique-id)
 - [Manage product lines](#manage-product-lines)
@@ -109,6 +110,11 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
    }
 }
 ```
+
+## Retrieve a single Invoice
+Like the list function this will return only one single invoice.
+
+**GET** `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}`
 
 ## Add or Update a **simple invoice**
 Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated. 
