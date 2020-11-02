@@ -119,7 +119,7 @@ Like the list function this will return only one single invoice.
 ## Add or Update a **simple invoice**
 Simple invoices are invoices created *without any bookings attached.* This becomes handy when you sell/rent products other than your customers staying in your accommodation. In fact the technic itself is exactly the same, the only difference is that the automatically price calculation based on price rates and tourist taxes is not activated. 
 
-The endpoints will return always the created or updated invoice (HTTP 200)
+These endpoints will return always the created or updated invoice (HTTP 200)
 
 **POST (Create)**    
 `https://app.mytourist.cloud/api/v1/invoices`   
