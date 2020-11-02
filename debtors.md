@@ -4,54 +4,55 @@
 This API endpoint let you manage your debtors. [Parameters](#available-parameters) can be found on the very end of this page.
 
 ## List all debtors
-Get a list of all your debtors returned in `JSON` format.
+Get a list of all your debtors returned in `JSON` format. 
 **GET** `https://app.mytourist.cloud/api/v1/debtors`
+
+**Results**
+```json
+{
+    "debtor_id":"23192010299",
+    "company_name":null,
+    "company_chamber_id":null,
+    "first_name":"Max",
+    "last_name":"Musterman",
+    "address":"streetname 55 Block 3",
+    ...
+},
+{
+    ...
+}
+```
 
 ## Retrieve a single debtor
 Get a single Debtor returned in `JSON` format.
 **GET** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
+
+
+**Results**
+```json
+{
+    "debtor_id":"23192010299",
+    "company_name":null,
+    "company_chamber_id":null,
+    "first_name":"Max",
+    "last_name":"Musterman",
+    "address":"streetname 55 Block 3",
+    ...
+}
+```
 
 ## Create a debtor
 You can easally create a new debtor by calling the following URL by the `POST` method. This endpoints will return the saved debtor as their (200 HTTP response) result.
 
 **POST** `https://app.mytourist.cloud/api/v1/debtors`    
 
-**Example creating a Debtor**
-```bash
-curl --location --request POST 'https://app.mytourist.cloud/api/v1/debtors' \
---header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
---form 'first_name=Max' \
---form 'last_name=Musterman' \
---form 'company_name=MyTourist' \
---form 'company_chamber_id=123456789'
-```
 
 ## Update a debtor
 When you want to update any debtor you'll need to use the same `POST` method with the `debtor_id` appended to the URL. 
 
 **POST** `https://app.mytourist.cloud/api/v1/debtors/{DEBTOR_ID}`
 
-_You can do either overwrite the whole JSON result with your parameters and push it back in JSON format (use the header `Content-Type: application/json`) or just change individua; fields by using the `formData` method. When you don't call particular paramaters we won't do anything and ignoring this parameter. When you put a parameter as an empty string we will emtpying this parameter inside our database also._
-
-**Example with `formData`**
-```bash
-curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
---header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
---form 'first_name=Max' \
---form 'address=Previewstreet 66 Block A' \
---form 'note=This is an test note'
-```
-
-**Example with `JSON`**
-```bash
-curl --location --request POST 'http://localhost:8004/api/v1/debtors/82010288' \
---header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "first_name": "max",
-    "address": "Previewstreet 666 Block A"
-}'
-```
+_You can do either overwrite the whole JSON result with your parameters and push it back in JSON format (use the header `Content-Type: application/json`) or just change individual; fields by using the `formData` method. When you don't call particular parameters we won't do anything and ignoring this parameter. When you put a parameter as an empty string we will emptying this parameter inside our database also._
 
 ## Available Parameters
 <table>

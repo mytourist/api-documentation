@@ -25,14 +25,14 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer
 ```
 
 ## Start developing, testing and Deploy
-By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of developing any connection to us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
+By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do somethimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
 
 ### [Availability API](availability.html)
-Check for available roomtypes in a predefined date range. This enpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
+Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
 ### [Bookings API](bookings.html)
-Get booking by ID's and change their status, attach/dettach debtors, manage individual guests and select the right price rates. [Go to the documentation](bookings.html)
+Get booking by ID's and change their status, attach/detach debtors, manage individual guests and select the right price rates. [Go to the documentation](bookings.html)
 
 ### [Debtors API](debtors.html)
 Obtain a single Debtor or obtain a list of your Debtors based on some filtering. You can also manage their address and contact information. [Go to the documentation](debtors.html)
