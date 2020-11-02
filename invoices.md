@@ -131,11 +131,11 @@ The endpoints will return always the created or updated invoice (HTTP 200)
 ## Manage product lines
 You can use the pre defined products you have already been added in MyTourist or set your own product line in this invoice. Both add and update calls will return (HTTP 200) the full result of the line you just created/updated.
 
-**POST (Add)** 
-`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines`
+**POST (Add)**    
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines`    
 
-**POST (Update)**
-`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`
+**POST (Update)**    
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`    
 
 **Parameters when as manually added products**
 <table>
