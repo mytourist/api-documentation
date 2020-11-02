@@ -42,3 +42,6 @@ Retreive all `roomtypes` created in MyTourist. The results will included all att
     }
 ]
 ```
+
+## Create or update an roomtype
+At this point we **do not** support any changes made by the API. This because roomtypes and individual rooms are most likely connected to external providers and their price rates.
