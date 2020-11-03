@@ -38,10 +38,10 @@ Get a list of all your tax rates returned in `JSON` format.
 ```
 
 ## Create / Update a rate
-However tax rates are normally unchanged for a long time, you *can* manage your tax rates by this endpoint.
+However tax rates are normally unchanged for a long time, you *can* manage your tax rates by this endpoint. When call is done (HTTP 200) it will return the full rate in `JSON` format like above.
 
 **POST (add)** `https://app.mytourist.cloud/api/v1/tax-rates`
-**POST (update** `https://app.mytourist.cloud/api/v1/tax-rates/{RATE_ID}`
+**POST (update)** `https://app.mytourist.cloud/api/v1/tax-rates/{RATE_ID}`
 
 **Parameters**
 <table>
@@ -50,3 +50,6 @@ However tax rates are normally unchanged for a long time, you *can* manage your 
 </table>
 
 ## Delete a single rate
+Be aware that products on invoices has potential their relations to this rate. After deleting this rate the invoice keep their calculated data, but when you change an product on the any invoice row no longer this rate exists and won't calculate tax any longer.
+
+**DELETE** `https://app.mytourist.cloud/api/v1/tax-rates/{RATE_ID}`
