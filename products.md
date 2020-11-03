@@ -79,6 +79,8 @@ The `auto_add_when_booked_on_roomtypes` becomes handy when you want to add this 
     <tr><td>price</td><td>required</td><td>float</td><td>Per piece</td></tr>    
     <tr><td>calculation_methods</td><td>optional</td><td>string</td><td>Pick: person or/and night (devided by comma)</td></tr>
     <tr><td>category_id</td><td>optional</td><td>integer</td><td>@category_id <a href="#">ProductCategories API</a></td></tr>    
+</table>
+<table>
     <tr><td>auto_add_when_booked_on_roomtypes</td><td>optional</td><td>string</td><td>@roomtype_id's devided by a comma <a href="#">Roomtypes API</a></td></tr>    
 </table>
 
