@@ -33,14 +33,14 @@ Get a list of all your product returned in `JSON` format.
         "name":"Bike Rental",
         "description":"Electric bike.",
         "translations":{
-            "name" :[
-                "de" : "Fahrad verleih",
-                ".." : "..",
-            ],
-            "description" :[
-                "de" : "Elektrisches Fahrrad",
-                ".." : "..",
-            ]            
+            "name":{
+                "de":"Fahrad verleih",
+                "...":"..."
+            },
+            "description":{
+                "de":"Elektrisches Fahrrad",
+                "...":"..."
+            }
         },
         "calculation_methods":[
             "person",
@@ -61,14 +61,14 @@ Get a list of all your product returned in `JSON` format.
         "name":"Final cleaning",
         "description":"Each booker has to pay this amount as final cleaning service.",
         "translations":{
-            "name" :[
-                "de" : "Endreinigung",
-                ".." : "..",
-            ],
-            "description" :[
-                "de" : "Jeder Bucher muss diesen Betrag als Endreinigungsservice bezahlen.",
-                ".." : "..",
-            ]            
+            "name":{
+                "de":"Endreinigung",
+                "...":"..."
+            },
+            "description":{
+                "de":"Jeder Bucher muss diesen Betrag als Endreinigungsservice bezahlen.",
+                "...":"..."
+            }
         },
         "calculation_methods":[],
         "auto_add_when_booked_on_roomtypes":[
