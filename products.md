@@ -63,6 +63,11 @@ Same type of results as the list function above, only this endpoint will return 
 **GET** `https://app.mytourist.cloud/api/v1/products/{PRODUCT_ID}`
 
 ## Create a product
+For products we always advise to fill the content variables with the language of your Invoices. So that the products displayed on your Invoices not printing the automatically translated information.
+
+The `calculation_methods` provide you with the possibility to automatically calculate the price per night or/and nights .. when the product is added to your invoice it will calculate the price based on those two items. But is always optional.
+
+The `auto_add_when_booked_on_roomtypes` becomes handy when you want to add this product automatically to the booking Invoice. Mostly used with final cleaning purposes.
 
 **POST** `https://app.mytourist.cloud/api/v1/products`
 
@@ -74,5 +79,6 @@ Same type of results as the list function above, only this endpoint will return 
     <tr><td>price</td><td>required</td><td>float</td><td>Per piece</td></tr>    
     <tr><td>calculation_methods</td><td>optional</td><td>string</td><td>Pick: person or/and night (devided by comma)</td></tr>
     <tr><td>category_id</td><td>optional</td><td>integer</td><td></td></tr>    
+    <tr><td>auto_add_when_booked_on_roomtypes</td><td>optional</td><td>string</td><td>Roomtype ID's devided by a comma</td></tr>    
 </table>
 
