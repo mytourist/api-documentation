@@ -17,7 +17,7 @@ REST also implies a nice and clean structure for URLs or endpoints. This means y
 The first thing you need is a API key. Each location/company profile has a API key printed inside the API page found in preferences. Of course it’s very important to keep your API key secure. Do not ever share them. 
 
 ## Use at your own risk / No warranty
-We validate each request based on basic validation rules and you will operate outside the GUI of MyTourist with all the nice checks inside. You are responsibble for the data you will add or change via the API. Each call is logged and kept for at least 24 month. We strongly recommend to test your API first in an dummy company profile before you use your production based company profile. Inside your account settings you are free to manage your company profiles. If your connection causes data to become corrupt, we can charge you to restore a backup of your company profile.
+We validate each request based on basic validation rules and you will operate outside the GUI of MyTourist with all the nice checks inside. You are responsible for the data you will add or change via the API. Each call is logged and kept for at least 24 month. We strongly recommend to test your API first in an dummy company profile before you use your production based company profile. Inside your account settings you are free to manage your company profiles. If your connection causes data to become corrupt, we can charge you to restore a backup of your company profile.
 
 ## Authentication
 The API key or token must be sent along with each API request, by providing it in the HTTP call’s Authorization header using the Bearer method. For example: a valid Authorization header is `Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6`.
@@ -28,13 +28,13 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer
 ```
 
 ## Start developing, testing and Deploy
-By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do somethimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
+By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
 ### [Availability API](availability.html)
 Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
 ### [Debtors API](debtors.html)
-Manage your debtors easly from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
+Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
 
 ### [Invoices API](invoices.html)
 With this endpoint you can manage your invoices, payments and product lines. [Go to the documentation](invoices.html) or jump direct to [List invoices](invoices.html#list-invoices), [Retrieve a single Invoice](invoices.html#retrieve-a-single-invoice), [Add or Update a simple invoice](invoices.html#add-or-update-a-simple-invoice), [Make invoice official by adding an unique ID](invoices.html#make-invoice-official-by-adding-an-unique-id), [Manage product lines](invoices.html#manage-product-lines), [Manage Payments](invoices.html#manage-payments), [Download invoices](invoices.html#download-invoice).
