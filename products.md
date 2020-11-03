@@ -102,4 +102,5 @@ The `auto_add_when_booked_on_roomtypes` becomes handy when you want to add this 
 <table>
     <tr><td>auto_add_when_booked_on_roomtypes</td><td>optional</td><td>string</td><td>@roomtype_id's devided by a comma <a href="#">Roomtypes API</a></td></tr>    
 </table>
-* required when creating a product.
+
+\* required when creating a product.
