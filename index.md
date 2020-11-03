@@ -53,7 +53,6 @@ Manage your products.
 We currently migrating our API to this centralized API. Please come back later..
 
 ### [Bookings API](#)
-### [Products API](#)
 ### [PriceRates API](#)
 
 
