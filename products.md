@@ -22,7 +22,11 @@ Get a list of all your product returned in `JSON` format.
 [
     {
         "id":"23192011031",
-        "category_id":"23192010291",
+        "category":{
+            "id":"23192010291",
+            "name":"Rental",
+            "color":"#55BB5A"
+        }
         "tax_id":"23192011034",
         "language":"nl",
         "price":14.00,
@@ -36,7 +40,11 @@ Get a list of all your product returned in `JSON` format.
     },
     {
         "id":"23192011032",
-        "category_id":"23192010291",
+        "category":{
+            "id":"23192010292",
+            "name":"General",
+            "color":"#55BB5A"
+        }
         "tax_id":"23192011034",
         "language":"nl",
         "price":60.00,
