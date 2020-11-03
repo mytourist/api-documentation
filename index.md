@@ -62,16 +62,13 @@ Products can be added to your invoices or as selectable additional product insid
 ### [ProductCategories](product-categories.html)
 To keep a clean overview of all the product you'll have. You can add a name and color to your categories, they only be visible for you and not for your customers. [Go to the documentation](product-categories.html) or jump direct to [List all product categories](product-categories.html#list-all-product-categories), [Create or update a product category](product-categories.html#create-or-update-a-product-category), [Remove a product category](product-categories.html#remove-a-product-category), [Available form parameters](product-categories.html#available-form-parameters)
 
+# Coming soon ..
+
 ### [PriceRates](price-rates.html)
 Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to ..
 
-
-
-
-# Coming soon ..
-We currently migrating our API to this centralized API. Please come back later..
-
-### [Bookings](#)
+### [Bookings](bookings.html)
+Via this endpoint it is possible to add and manage bookings from your own website/platform. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to ..
 
 # HTTP responses table
 <table>
