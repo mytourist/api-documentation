@@ -73,10 +73,14 @@ Same type of results as the list function above, only this endpoint will return 
 ## Create a product
 For products we always advise to fill the content variables with the language of your Invoices. So that the products displayed on your Invoices not printing the automatically translated information. For a list of [Available form parameters](#available-from-parameters) see bottom of this page.
 
+*Automatically translations for the `name` and `description` fields will be generated after 30 minutes of your last change*
+
 **POST** `https://app.mytourist.cloud/api/v1/products`
 
 ## Update a product
 The update function is exactly the same as above. The only difference is that no fields are required. Only the fields you push to us will be changed (even empty ones). All other fields will be ignored. For a list of [Available form parameters](#available-from-parameters) see bottom of this page.
+
+*Automatically translations for the `name` and `description` fields will be generated after 30 minutes of your last change*
 
 **POST** `https://app.mytourist.cloud/api/v1/products/{DEBTOR_ID}`
 
