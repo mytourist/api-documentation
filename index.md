@@ -9,12 +9,12 @@ Use the MyTourist API to integrate availability check, debtors and a lot more in
 If you have any questions about integrating our API, please contact us. We’re happy to help!
 
 **Quick jump to:**   
-- [API Endpoints](#api-endpoints)
-- [HTTP responses table](#http-responses-table)
 - [Get an API key](#get-an-api-key)
 - [Risk and warranty](#use-at-your-own-risk--no-warranty)
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
+- [API Endpoints](#api-endpoints)
+- [HTTP responses table](#http-responses-table)
 
 
 ## The MyTourist REST API
