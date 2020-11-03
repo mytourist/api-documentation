@@ -68,7 +68,7 @@ Same type of results as the list function above, only this endpoint will return 
 
 **Available form fields**
 <table>
-    <tr><td>language</td><td>required</td><td>iso</td><td>Like eg. nl, de, en, sp or fr</td></tr>    
+    <tr><td>language</td><td>required</td><td>iso</td><td>nl, de or en</td></tr>    
     <tr><td>name</td><td>required</td><td>string</td><td>In the language you set</td></tr>    
     <tr><td>description</td><td>required</td><td>string</td><td>In the language you set</td></tr>    
     <tr><td>price</td><td>required</td><td>float</td><td>Per piece</td></tr>    
