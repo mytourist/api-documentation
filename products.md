@@ -63,15 +63,25 @@ Same type of results as the list function above, only this endpoint will return 
 **GET** `https://app.mytourist.cloud/api/v1/products/{PRODUCT_ID}`
 
 ## Create a product
-For products we always advise to fill the content variables with the language of your Invoices. So that the products displayed on your Invoices not printing the automatically translated information.
+For products we always advise to fill the content variables with the language of your Invoices. So that the products displayed on your Invoices not printing the automatically translated information. For a list of [Available form parameters](#available-from-parameters) see bottom of this page.
 
+**POST** `https://app.mytourist.cloud/api/v1/products`
+
+## Update a product
+The update function is exactly the same as above. The only difference is that no fields are required. Only the fields you push to us will be changed (even empty ones). All other fields will be ignored. For a list of [Available form parameters](#available-from-parameters) see bottom of this page.
+
+**POST** `https://app.mytourist.cloud/api/v1/products/{DEBTOR_ID}`
+
+## Remove a product
+This has no effect on your proforma invoices. When you want to delete those products also from your proforma invoices you'll need to remove those product lines. See [Invoices API](invoices.html) documentation for more information about invoice product lines.
+
+**DELETE** `https://app.mytourist.cloud/api/v1/products`
+
+# Available form parameters
 The `calculation_methods` provide you with the possibility to automatically calculate the price per night or/and nights .. when the product is added to your invoice it will calculate the price based on those two items. But is always optional.
 
 The `auto_add_when_booked_on_roomtypes` becomes handy when you want to add this product automatically to the booking Invoice. Mostly used with final cleaning purposes.
 
-**POST** `https://app.mytourist.cloud/api/v1/products`
-
-**Available form fields**
 <table>
     <tr><td>language</td><td>required</td><td>iso</td><td>nl, de, fr or en</td></tr>    
     <tr><td>name</td><td>required</td><td>string</td><td>In the language you set</td></tr>    
