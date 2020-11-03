@@ -28,7 +28,7 @@ Get a list of all your product returned in `JSON` format.
             "color":"#55BB5A"
         }
         "tax_id":"23192011034",
-        "language":"nl",
+        "language":"en",
         "price":14.00,
         "name":"Bike Rental",
         "description":"Electric bike.",
@@ -56,7 +56,7 @@ Get a list of all your product returned in `JSON` format.
             "color":"#55BB5A"
         },
         "tax_id":"23192011034",
-        "language":"nl",
+        "language":"en",
         "price":60.00,
         "name":"Final cleaning",
         "description":"Each booker has to pay this amount as final cleaning service.",
