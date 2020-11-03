@@ -66,7 +66,7 @@ Same type of results as the list function above, only this endpoint will return 
 
 **POST** `https://app.mytourist.cloud/api/v1/products`
 
-**Available parameters**
+**Available form fields**
 <table>
     <tr><td>language</td><td>required</td><td>iso</td><td>Like eg. nl, de, en, sp or fr</td></tr>    
     <tr><td>name</td><td>required</td><td>string</td><td>In the language you set</td></tr>    
@@ -75,3 +75,4 @@ Same type of results as the list function above, only this endpoint will return 
     <tr><td>calculation_methods</td><td>optional</td><td>string</td><td>Pick: person or/and night (devided by comma)</td></tr>
     <tr><td>category_id</td><td>optional</td><td>integer</td><td></td></tr>    
 </table>
+

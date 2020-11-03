@@ -48,6 +48,9 @@ Via this endpoint you can obtain information about your roomtypes and rooms bell
 ### [Products API](products.html)
 Manage your products. 
 
+### [ProductCategories API](product-categories.html)
+Manage your product categories. 
+
 
 # Coming soon ..
 We currently migrating our API to this centralized API. Please come back later..
