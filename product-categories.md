@@ -46,6 +46,11 @@ You can easily create a product category by posting to the following URL. The na
 **POST (Create)** `https://app.mytourist.cloud/api/v1/product-categories`   
 **POST (Update)** `https://app.mytourist.cloud/api/v1/product-categories/{CATEGORY_ID}`
 
+## Remove a product category
+When you remove a product category all products inside will be moved into the `locked` default category.
+
+**DELETE** `https://app.mytourist.cloud/api/v1/product-categories/{CATEGORY_ID}`   
+
 ## Available form parameters
 <table>
     <tr><td>name</td><td>required on create</td><td>string</td></tr>    
