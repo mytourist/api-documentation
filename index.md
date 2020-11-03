@@ -46,7 +46,7 @@ You can manage your tax rates by this endpoint. Its based on an label and rate i
 Via this endpoint you can obtain information about your roomtypes and rooms bellow. Changing roomtypes and their rooms need to be done via the MyTourist interface. [Go to the documentation](roomtypes.html) 
 
 ### [Products API](products.html)
-Manage your products. 
+Products can be added to your invoices or as selectable additional product inside your booking engine. You can also add product fixed to bookings this becomes handy when you want to add final cleaning to each booking invoice. It is also possible to automatically calculate the price times the number of both guests and/or nights. [Go to the documentation](products.html) or jump direct to [List all products](products.html#list-all-products), [Retrieve a single product](products.html#retrieve-a-single-product), [Create a product](products.html#create-a-product), [Update a product](products.html#update-a-product), [Remove a product](products.html#remove-a-product), [Available form parameters](products.html#available-form-parameters).
 
 ### [ProductCategories API](product-categories.html)
 Manage your product categories. 
