@@ -32,6 +32,16 @@ Get a list of all your product returned in `JSON` format.
         "price":14.00,
         "name":"Bike Rental",
         "description":"Electric bike.",
+        "translations":{
+            "name" :[
+                "de" : "Fahrad verleih",
+                ".." : "..",
+            ],
+            "description" :[
+                "de" : "Elektrisches Fahrrad",
+                ".." : "..",
+            ]            
+        },
         "calculation_methods":[
             "person",
             "night"
@@ -44,12 +54,22 @@ Get a list of all your product returned in `JSON` format.
             "id":"23192010292",
             "name":"General",
             "color":"#55BB5A"
-        }
+        },
         "tax_id":"23192011034",
         "language":"nl",
         "price":60.00,
         "name":"Final cleaning",
         "description":"Each booker has to pay this amount as final cleaning service.",
+        "translations":{
+            "name" :[
+                "de" : "Endreinigung",
+                ".." : "..",
+            ],
+            "description" :[
+                "de" : "Jeder Bucher muss diesen Betrag als Endreinigungsservice bezahlen.",
+                ".." : "..",
+            ]            
+        },
         "calculation_methods":[],
         "auto_add_when_booked_on_roomtypes":[
             {
