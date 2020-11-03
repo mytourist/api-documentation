@@ -41,7 +41,9 @@ Get a list of all your product returned in `JSON` format. The first item of your
 ```
 
 ## Create or Update a product category
-You can easily create a product category by posting to the following URL. The naming of this product category is for internal purposes only and won't be showed to your customers. You can also add a HEX color of your choice.
+You can easily create/update a product category by posting to the following URLs. The naming of this product category is for internal purposes only and won't be showed to your customers. You can also add a HEX color of your choice.
+
+*Locked categories (by MyTourist) are not changeable by this endpoint*
 
 **POST (Create)** `https://app.mytourist.cloud/api/v1/product-categories`   
 **POST (Update)** `https://app.mytourist.cloud/api/v1/product-categories/{CATEGORY_ID}`
