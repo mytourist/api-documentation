@@ -8,6 +8,11 @@ Use the MyTourist API to integrate availability check, debtors and a lot more in
 
 If you have any questions about integrating our API, please contact us. We’re happy to help!
 
+**Quick jump to:**   
+- [API Endpoints](#api-endpoints)
+- [HTTP responses table](#http-responses-table)
+
+
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
 
@@ -27,7 +32,7 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/v1/debtors -H 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
 ```
 
-## Start developing, testing and Deploy
+## Start developing, test and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
 # API Endpoints
