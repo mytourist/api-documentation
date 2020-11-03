@@ -24,7 +24,7 @@ The API key or token must be sent along with each API request, by providing it i
 
 In the example below we use a API key on the GET method of the debtors resource. This method fetches a list of debtors.
 ```bash
-curl -X GET https://app.mytourist.cloud/api/v1/debtors -H "Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6"
+curl -X GET https://app.mytourist.cloud/api/v1/debtors -H 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
 ```
 
 ## Start developing, testing and Deploy
