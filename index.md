@@ -68,7 +68,7 @@ To keep a clean overview of all the product you'll have. You can add a name and 
 Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to ..
 
 ### [Bookings](bookings.html)
-Via this endpoint it is possible to add and manage bookings from your own website/platform. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to ..
+Via this endpoint it is possible to add and manage bookings from your own website/platform. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to..
 
 # HTTP responses table
 <table>
