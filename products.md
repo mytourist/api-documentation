@@ -73,12 +73,12 @@ The `auto_add_when_booked_on_roomtypes` becomes handy when you want to add this 
 
 **Available form fields**
 <table>
-    <tr><td>language</td><td>required</td><td>iso</td><td>nl, de or en</td></tr>    
+    <tr><td>language</td><td>required</td><td>iso</td><td>nl, de, fr or en</td></tr>    
     <tr><td>name</td><td>required</td><td>string</td><td>In the language you set</td></tr>    
     <tr><td>description</td><td>required</td><td>string</td><td>In the language you set</td></tr>    
     <tr><td>price</td><td>required</td><td>float</td><td>Per piece</td></tr>    
     <tr><td>calculation_methods</td><td>optional</td><td>string</td><td>Pick: person or/and night (devided by comma)</td></tr>
-    <tr><td>category_id</td><td>optional</td><td>integer</td><td></td></tr>    
+    <tr><td>category_id</td><td>optional</td><td>integer</td><td>@category_id <a href="#">ProductCategories API</a></td></tr>    
     <tr><td>auto_add_when_booked_on_roomtypes</td><td>optional</td><td>string</td><td>Roomtype ID's devided by a comma</td></tr>    
 </table>
 
