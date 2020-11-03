@@ -20,7 +20,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
 
-REST also implies a nice and clean structure for URLs or endpoints. This means you can reach any part of the MyTourist API on https://app.mytourist.com/api/ adding the name of the resource you want to interact with.
+REST also implies a nice and clean structure for URLs or endpoints. This means you can reach any part of the MyTourist API on https://app.mytourist.com/api/v1 adding the name of the resource you want to interact with.
 
 ## Get an API key
 The first thing you need is a API key. Each location/company profile has a API key printed inside the API page found in preferences. Of course it’s very important to keep your API key secure. Do not ever share them. 
@@ -62,12 +62,16 @@ Products can be added to your invoices or as selectable additional product insid
 ### [ProductCategories](product-categories.html)
 To keep a clean overview of all the product you'll have. You can add a name and color to your categories, they only be visible for you and not for your customers. [Go to the documentation](product-categories.html) or jump direct to [List all product categories](product-categories.html#list-all-product-categories), [Create or update a product category](product-categories.html#create-or-update-a-product-category), [Remove a product category](product-categories.html#remove-a-product-category), [Available form parameters](product-categories.html#available-form-parameters)
 
+### [PriceRates](price-rates.html)
+Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to ..
+
+
+
 
 # Coming soon ..
 We currently migrating our API to this centralized API. Please come back later..
 
 ### [Bookings](#)
-### [PriceRates](#)
 
 # HTTP responses table
 <table>
