@@ -42,6 +42,9 @@ With this endpoint you can manage your invoices, payments and product lines. [Go
 ### [TaxRates API](tax-rates.html)
 You can manage your tax rates by this endpoint. Its based on an label and rate itself. Most of the time tax rates stay untouched, but *can* be changed via this API. [Go to the documentation](tax-rates.html) or jump direct to [List all rates](tax-rates.html#list-all-rates), [Create / Update a rate](tax-rates.html#create--update-a-rate), [Delete a single rate](tax-rates.html#delete-a-single-rate).
 
+### [Roomtypes and Rooms](roomtypes.html)
+Via this endpoint you can obtain information about your roomtypes and rooms bellow. Changing roomtypes and their rooms need to be done via the MyTourist interface. [Go to the documentation](roomtypes.html) 
+
 
 # Coming soon ..
 We currently migrating our API to this centralized API. Please come back later..
@@ -49,7 +52,6 @@ We currently migrating our API to this centralized API. Please come back later..
 ### [Bookings API](#)
 ### [Products API](#)
 ### [PriceRates API](#)
-### [Roomtypes](#)
 
 
 # HTTP responses table
