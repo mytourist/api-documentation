@@ -39,6 +39,9 @@ Manage your debtors easily from this endpoint. [Go to the documentation](debtors
 ### [Invoices API](invoices.html)
 With this endpoint you can manage your invoices, payments and product lines. [Go to the documentation](invoices.html) or jump direct to [List invoices](invoices.html#list-invoices), [Retrieve a single Invoice](invoices.html#retrieve-a-single-invoice), [Add or Update a simple invoice](invoices.html#add-or-update-a-simple-invoice), [Make invoice official by adding an unique ID](invoices.html#make-invoice-official-by-adding-an-unique-id), [Manage product lines](invoices.html#manage-product-lines), [Manage Payments](invoices.html#manage-payments), [Download invoices](invoices.html#download-invoice).
 
+### [TaxRates API](tax-rates.html)
+You can manage your tax rates by this endpoint. Its based on an label and rate itself. Most of the time tax rates stay untouched, but *can* be changed via this API. [Go to the documentation](tax-rates.html) or jump direct to 
+
 
 # Coming soon ..
 We currently migrating our API to this centralized API. Please come back later..
