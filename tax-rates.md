@@ -2,7 +2,7 @@
 title: TaxRates
 layout: default
 ---
-### [Back to overview](index.html#start-developing-testing-and-deploy)
+### [Back to overview](index.html#api-endpoints)
 ---
 # TaxRates API
 This API endpoint let you manage your tax rates.

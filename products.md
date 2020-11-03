@@ -2,7 +2,7 @@
 title: Products
 layout: default
 ---
-### [Back to overview](index.html#start-developing-testing-and-deploy)
+### [Back to overview](index.html#api-endpoints)
 ---
 # Products API
 This API endpoint let you manage your products.    

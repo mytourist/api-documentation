@@ -30,34 +30,35 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H 'Authorization: Bearer
 ## Start developing, testing and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
-### [Availability API](availability.html)
+# API Endpoints
+
+### [Availability](availability.html)
 Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
-### [Debtors API](debtors.html)
+### [Debtors](debtors.html)
 Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
 
-### [Invoices API](invoices.html)
+### [Invoices](invoices.html)
 With this endpoint you can manage your invoices, payments and product lines. [Go to the documentation](invoices.html) or jump direct to [List invoices](invoices.html#list-invoices), [Retrieve a single Invoice](invoices.html#retrieve-a-single-invoice), [Add or Update a simple invoice](invoices.html#add-or-update-a-simple-invoice), [Make invoice official by adding an unique ID](invoices.html#make-invoice-official-by-adding-an-unique-id), [Manage product lines](invoices.html#manage-product-lines), [Manage Payments](invoices.html#manage-payments), [Download invoices](invoices.html#download-invoice).
 
-### [TaxRates API](tax-rates.html)
+### [TaxRates](tax-rates.html)
 You can manage your tax rates by this endpoint. Its based on an label and rate itself. Most of the time tax rates stay untouched, but *can* be changed via this API. [Go to the documentation](tax-rates.html) or jump direct to [List all rates](tax-rates.html#list-all-rates), [Create / Update a rate](tax-rates.html#create--update-a-rate), [Delete a single rate](tax-rates.html#delete-a-single-rate).
 
-### [Roomtypes API](roomtypes.html)
+### [Roomtypes](roomtypes.html)
 Via this endpoint you can obtain information about your roomtypes and rooms bellow. Changing roomtypes and their rooms need to be done via the MyTourist interface. [Go to the documentation](roomtypes.html) 
 
-### [Products API](products.html)
+### [Products](products.html)
 Products can be added to your invoices or as selectable additional product inside your booking engine. You can also add product fixed to bookings this becomes handy when you want to add final cleaning to each booking invoice. It is also possible to automatically calculate the price times the number of both guests and/or nights. [Go to the documentation](products.html) or jump direct to [List all products](products.html#list-all-products), [Retrieve a single product](products.html#retrieve-a-single-product), [Create a product](products.html#create-a-product), [Update a product](products.html#update-a-product), [Remove a product](products.html#remove-a-product), [Available form parameters](products.html#available-form-parameters).
 
-### [ProductCategories API](product-categories.html)
+### [ProductCategories](product-categories.html)
 Manage your product categories. 
 
 
 # Coming soon ..
 We currently migrating our API to this centralized API. Please come back later..
 
-### [Bookings API](#)
-### [PriceRates API](#)
-
+### [Bookings](#)
+### [PriceRates](#)
 
 # HTTP responses table
 <table>

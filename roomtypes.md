@@ -2,7 +2,7 @@
 title: Debtors
 layout: default
 ---
-### [Back to overview](index.html#start-developing-testing-and-deploy)
+### [Back to overview](index.html#api-endpoints)
 ---
 # Roomtypes API
 Roomtypes are groups of rooms like eg. "Doubleroom" this roomtype can contains "Room 6 1th. floor" & "Room 4 3th floor". B&B's has often not multiple rooms and most of the time their roomtype name is exact the same as the room one.

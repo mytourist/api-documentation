@@ -2,7 +2,7 @@
 title: Invoices
 layout: default
 ---
-### [Back to overview](index.html#start-developing-testing-and-deploy)
+### [Back to overview](index.html#api-endpoints)
 ---
 # Invoices API
 Invoices are (by default) automatically created when a booking is added to MyTourist. Then the logies price, tourist tax and fixed products will be automatically calculated. But you can also create single invoices witch has no relations with any of your bookings. This can be useful when you'll have additional business aspects. Think as `boat or bike rentals`,`bars` or `activities`.
