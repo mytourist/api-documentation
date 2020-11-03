@@ -11,6 +11,10 @@ If you have any questions about integrating our API, please contact us. We’re 
 **Quick jump to:**   
 - [API Endpoints](#api-endpoints)
 - [HTTP responses table](#http-responses-table)
+- [Get an API key](#get-an-api-key)
+- [Risk and warranty](#use-at-your-own-risk--no-warranty)
+- [Authentication](#authentication)
+- [Start developing, test and deploy](#start-developing-test-and-deploy)
 
 
 ## The MyTourist REST API
