@@ -11,7 +11,7 @@ You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rate
 <table>
     <tr><td>arrival</td><td>required</td><td>YYYY-MM-DD</td></tr>    
     <tr><td>departure</td><td>required</td><td>YYYY-MM-DD</td></tr>
-    <tr><td>roomtype_id</td><td>optional</td><td>The API will only return the results for this particular roomtype.</td></tr>
+    <tr><td>roomtype_id</td><td>optional</td><td>The API will only return the results for this particular <a href="roomtypes.html">roomtypes</a>.</td></tr>
     <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>
 </table>
 
