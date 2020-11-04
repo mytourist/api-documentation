@@ -27,23 +27,23 @@ Get a list of all price rates inside a roomtype.
 [
     {
         "id":"23192011041",
-        "parent_id":"23192010281",      // When rate acting as sub price rate.
+        "parent_id":"23192010281",
         "roomtype_id":"23192010281",
-        "internal_name":"Long weekend", // Internal name
-        "public_name":{                 // Autom. translated
+        "internal_name":"Long weekend",
+        "public_name":{
             "nl" : "Lang weekend",
             "en" : "Verlängertes Wochenende",
             ".." : ""
         },
         "note":"This rate is only bookable in the weekends. Based on the main price with -10%",
-        "enabled_for_booking_engine":true,  // Visible on the booking engine.
+        "enabled_for_booking_engine":true,  
         "persons":2,                        
         "min_stay":4,
         "max_stay":null,
-        "closed_on_arrival":"mo,tu,we,th,sa,su", // Weekdays blocked for arrival
+        "closed_on_arrival":"mo,tu,we,th,sa,su",
         "closed_on_departure":"tu,we,th,fr,sa",
-        "default_price_per_night":"10.00",       // Price also used for percentages
-        "price_per_night_percentage":true,       // Price value is percentage (only available when sub rate)
+        "default_price_per_night":"10.00", 
+        "price_per_night_percentage":true,
         "arrangement_products_inlcuded":[
             {
                 "id":"231920110418",
@@ -64,3 +64,14 @@ Get a list of all price rates inside a roomtype.
 Same result as above but than a particular single price rate wil returned in `json`. The same parameters can be used as the list endpoint.
 
 **GET** `https://app.mytourist.cloud/api/v1/price-rates/{RATE_ID}`
+
+# Results explained
+<table>
+    <tr><td>parent_id</td><td>When rate is acting as sub price rate. (cleaner calendar and possibility to change price in percentages)</td></tr>
+    <tr><td>public_name</td><td>When rate is visible inside the booking engine we automatically translate your manually given name into +/- 15 languages.</td></tr>
+    <tr><td>enabled_for_booking_engine</td><td>Show rate publicly inside your booking engine</td></tr>
+    <tr><td>closed_on_arrival</td><td>No arrival possible at this day; mo,tu,we,th,fr,sa,su</td></tr>
+    <tr><td>closed_on_departure</td><td>No departure possible at this day; mo,tu,we,th,fr,sa,su</td></tr>
+    <tr><td>default_price_per_night</td><td>Default price per night in euro's or in percentages.</td></tr>
+    <tr><td>price_per_night_percentage</td><td>Price value is percentage (only available when sub rate)</td></tr>
+</table>
