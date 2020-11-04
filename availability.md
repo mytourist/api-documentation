@@ -1,7 +1,9 @@
 ### [Back to overview](index.html#api-endpoints)
 
 # Availability API
-To check the availability on a single or all available `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price `rates`.
+To check the availability on a single or all `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price rates.
+
+You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rates.html) to create a booking on this date-range (when available).
 
 **GET** `https://app.mytourist.cloud/api/v1/availability?arrival={DATE}&departure={DATE}`
 
@@ -13,13 +15,7 @@ To check the availability on a single or all available `roomtypes` in a specific
     <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>
 </table>
 
-**Example**
-```bash
-curl --location --request GET 'https://app.mytourist.cloud/api/v1/availability?arrival={date}&departure={date}' \
---header 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
-```
-
-**Results**
+**Example result**
 ```JSON
 [
     {
