@@ -60,12 +60,12 @@ Via this endpoint you can obtain information about your roomtypes and rooms bell
 Products can be added to your invoices or as selectable additional product inside your booking engine. You can also add product fixed to bookings this becomes handy when you want to add final cleaning to each booking invoice. It is also possible to automatically calculate the price times the number of both guests and/or nights. [Go to the documentation](products.html) or jump direct to [List all products](products.html#list-all-products), [Retrieve a single product](products.html#retrieve-a-single-product), [Create a product](products.html#create-a-product), [Update a product](products.html#update-a-product), [Remove a product](products.html#remove-a-product), [Available form parameters](products.html#available-form-parameters).
 
 ### [ProductCategories](product-categories.html)
-To keep a clean overview of all the product you'll have. You can add a name and color to your categories, they only be visible for you and not for your customers. [Go to the documentation](product-categories.html) or jump direct to [List all product categories](product-categories.html#list-all-product-categories), [Create or update a product category](product-categories.html#create-or-update-a-product-category), [Remove a product category](product-categories.html#remove-a-product-category), [Available form parameters](product-categories.html#available-form-parameters)
-
-# Coming soon ..
+To keep a clean overview of all the product you'll have. You can add a name and color to your categories, they only be visible for you and not for your customers. [Go to the documentation](product-categories.html) or jump direct to [List all product categories](product-categories.html#list-all-product-categories), [Create or update a product category](product-categories.html#create-or-update-a-product-category), [Remove a product category](product-categories.html#remove-a-product-category), [Available form parameters](product-categories.html#available-form-parameters).
 
 ### [PriceRates](price-rates.html)
-Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to ..
+Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](#list-all-price-rates),[Retrieve a single price rate](#retrieve-a-single-price-rate), [Create a price rate](#create-a-price-rate), [Update a price rate](#create-a-price-rate), [Delete a price rate](#create-a-price-rate).
+
+# Coming soon ..
 
 ### [Bookings](bookings.html)
 Via this endpoint it is possible to add and manage bookings from your own website/platform. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to..
