@@ -1,5 +1,5 @@
 ---
-title: My First Page
+title: API V1 MyTourist
 layout: default
 ---
 
