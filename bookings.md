@@ -13,6 +13,8 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 - [Create a booking](#create-a-booking)
 - [Update a booking](#update-a-booking)
 - [Cancel a booking](#cancel-a-booking)
+- [Available form parameters](#available-form-parameters)
+
 
 # List bookings between dates
 To prevent heavy requests you need to give us an `from` and `until` date. These dates may not deviate by more than 36 days. All bookings made in this period will be shown for each roomtype in your account. It is also possible to set an `roomtype_id` to only fetch bookings for this roomtype.
