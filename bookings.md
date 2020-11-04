@@ -79,3 +79,28 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
 # Retrieve a single booking
 Same `JSON` output as above with all information.
 
+**GET** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}`
+
+# Create a booking
+This endpoint will expect that you have already validated the [availability](availability.html). Ofcourse this endpoint will validate once more the availability of the given roomtype. But it is still faster to validate the availability with the corresponding endpoint.
+
+**POST** `https://app.mytourist.cloud/api/v1/bookings`
+
+**Available form parameters**
+<table>
+    <tr><td>arrival</td><td>required</td><td>>DATE: YYYMMDD</td></tr>
+    <tr><td>departure</td><td>required</td><td>DATE: YYYMMDD</td></tr>
+    <tr><td>roomtype_id</td><td>required</td><td></td></tr>
+    <tr><td>rate_id</td><td>required</td><td></td></tr>
+    <tr><td>debtor_id</td><td>optional</td><td></td></tr>
+    <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
+    <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
+    <tr><td>number_of_children</td><td>optional</td><td>float (number of children in guests total)</td></tr>
+    <tr><td>dietary_wishes</td><td>optional</td><td>string</td></tr>
+    <tr><td>note</td><td>optional</td><td>string</td></tr>
+    <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>
+    <tr><td>forced_logies_price</td><td>optional</td><td>float (to force logies invoice price)</td></tr>
+    <tr><td>invoice_enabled</td><td>optional</td><td>true/false (default:true)</td></tr>
+</table>
+
+
