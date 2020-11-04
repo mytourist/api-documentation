@@ -94,7 +94,7 @@ This endpoint will expect that you have already validated the [availability](ava
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
     <tr><td>rate_id</td><td>optional*</td><td>ID of <a href="price-rates.html">price rates</a> (default: 1th listed rate)</td></tr>
-    <tr><td>debtor_id</td><td>optional</td><td></td></tr>
+    <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
     <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
     <tr><td>number_of_children</td><td>optional</td><td>float (number of children in guests total)</td></tr>
