@@ -98,7 +98,7 @@ This action is only allowed for bookings created inside MyTourist, Your API or f
     <tr><td>channel</td><td>optional</td><td>default: mytourist (<a href="#available-channels">list</a>)</td></tr>
     <tr><td>arrival</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
-    <tr><td>room_id</td><td>required*</td><td>ID of a room inside a <a href="roomtypes.html">roomtype</a></td></tr>
+    <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
     <tr><td>rate_id</td><td>optional*</td><td>ID of <a href="price-rates.html">price rates</a> (default: 1th listed rate)</td></tr>
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
