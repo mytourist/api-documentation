@@ -14,6 +14,7 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 - [Update a booking](#update-a-booking)
 - [Cancel a booking](#cancel-a-booking)
 - [Available form parameters](#available-form-parameters)
+- [Available channels](#available-channels)
 
 
 # List bookings between dates
@@ -132,4 +133,8 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
 <table>
     <tr><td>mytourist</td><td>creates booking as it's been created inside the MyTourist interface</td></tr>
     <tr><td>api</td><td>creates booking as external channel. Bookings are locked until you change them via the API</td></tr>
+    <tr><td>{custom}</td><td>Only available for certified software/platforms partners</td>
 </table>
+
+**Custom channel connection for connectivity partners**  
+Owning a online Travel Agency? For contracted partners we can create a custom channel. Then a 2-way connection can be made for bookings, availability and pricing. You can build a booking module on your platform or synchronize the bookings into our centralized database. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.</span>
