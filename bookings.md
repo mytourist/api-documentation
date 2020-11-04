@@ -133,7 +133,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
 <table>
     <tr><td>mytourist</td><td>creates booking as it's been created inside the MyTourist interface</td></tr>
     <tr><td>api</td><td>creates booking as external channel. Bookings are locked until you change them via the API</td></tr>
-    <tr><td>{custom}</td><td>Only available for certified software/platforms partners</td>
+    <tr><td>{custom}</td><td>Only available for certified software/platforms partners</td></tr>
 </table>
 
 **Custom channel connection for connectivity partners**  
