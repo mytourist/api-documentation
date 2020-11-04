@@ -37,15 +37,15 @@ curl -X GET https://app.mytourist.cloud/api/v1/debtors -H 'Authorization: Bearer
 ```
 
 ## Certification
-For some eg. `create/update` endpoints a really good understanding of the OTA process is required. Thats why these functions are only available for contracted software/platform partners. To request access, please <a href="https://mytourist.cloud" target="_blank">contact us</a>.
+For some eg. `create/update` endpoints an really good understanding of the OTA process is required. Thats why these functions are only available for contracted software/platform partners. To request access, please <a href="https://mytourist.cloud" target="_blank">contact us</a>.
 
 ## Start developing, test and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
 # API Endpoints
 
-### [Availability](availability.html)
-Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
+>### [Availability](availability.html)
+>Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan >ID's. [Go to the documentation](availability.html)
 
 ### [Debtors](debtors.html)
 Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
