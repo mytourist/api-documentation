@@ -36,6 +36,9 @@ In the example below we use a API key on the GET method of the debtors resource.
 curl -X GET https://app.mytourist.cloud/api/v1/debtors -H 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
 ```
 
+## Certification
+For some eg. `create/update` endpoints a really good understanding of the OTA process is required. Thats why these functions are only available for contracted software/platform partners. To request access, please <a href="https://mytourist.cloud" target="_blank">contact us</a>.
+
 ## Start developing, test and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
@@ -46,6 +49,9 @@ Check for available roomtypes in a predefined date range. This endpoint will ret
 
 ### [Debtors](debtors.html)
 Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
+
+### [Bookings](bookings.html)
+Via this endpoint it is possible to add and manage bookings. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to..
 
 ### [Invoices](invoices.html)
 With this endpoint you can manage your invoices, payments and product lines. [Go to the documentation](invoices.html) or jump direct to [List invoices](invoices.html#list-invoices), [Retrieve a single Invoice](invoices.html#retrieve-a-single-invoice), [Add or Update a simple invoice](invoices.html#add-or-update-a-simple-invoice), [Make invoice official by adding an unique ID](invoices.html#make-invoice-official-by-adding-an-unique-id), [Manage product lines](invoices.html#manage-product-lines), [Manage Payments](invoices.html#manage-payments), [Download invoices](invoices.html#download-invoice).
@@ -64,11 +70,6 @@ To keep a clean overview of all the product you'll have. You can add a name and 
 
 ### [PriceRates](price-rates.html)
 Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](price-rates.html#list-all-price-rates),[Retrieve a single price rate](price-rates.html#retrieve-a-single-price-rate), [Create a price rate](price-rates.html#create-a-price-rate), [Update a price rate](price-rates.html#create-a-price-rate), [Delete a price rate](price-rates.html#create-a-price-rate).
-
-# Coming soon ..
-
-### [Bookings](bookings.html)
-Via this endpoint it is possible to add and manage bookings from your own website/platform. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to..
 
 # HTTP responses table
 <table>
