@@ -137,4 +137,4 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
 </table>
 
 **Custom channel connection for connectivity partners**  
-Owning a online Travel Agency? For contracted partners we can create a custom channel. Then a 2-way connection can be made for bookings, availability and pricing. You can build a booking module on your platform or synchronize the bookings into our centralized database. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.</span>
+Owning a online Travel Agency? For contracted partners we can create a custom channel. Then a 2-way connection can be made for bookings, availability and pricing. You can build a booking module on your platform or synchronize the bookings into our centralized database. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.
