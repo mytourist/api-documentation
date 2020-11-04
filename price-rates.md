@@ -4,7 +4,7 @@ layout: default
 ---
 ### [Back to overview](index.html#api-endpoints)
 ---
-# Products API
+# Price Rates
 This API endpoint let you manage your price rates. Most useful to fetch price rates per roomtype.
 
 **Index:** 
