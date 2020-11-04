@@ -90,6 +90,7 @@ This endpoint will expect that you have already validated the [availability](ava
 
 # Available form parameters
 <table>
+    <tr><td>channel</td><td>optional</td><td>default: myTourist (<a href="#available-channels">list</a>)</td></tr>
     <tr><td>arrival</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
@@ -106,3 +107,10 @@ This endpoint will expect that you have already validated the [availability](ava
 </table>
 
 \* Required on creating a booking.
+
+# Available channels
+
+<table>
+    <tr><td>mytourist</td><td>editable inside MyTourist interface</td></tr>
+    <tr><td>api</td><td>not editable inside MyTourist interface</td></tr>
+</table>
