@@ -88,10 +88,14 @@ This endpoint will expect that you have already validated the [availability](ava
 
 **POST** `https://app.mytourist.cloud/api/v1/bookings`
 
+>Be aware that your price `rate_id` is corresponding with your `roomtype_id`.
+
 # Update a booking
 You can either post the changed `JSON` result or just the field(s) you want to change. When a field is not set, it will be ignored. When you send a empty field it will be restored to the default value or will changed to `null`.
 
 >Bookings from external providers are partial locked fur security and synchronization purposes. `arrival`, `departure` and `channel_reference` fields are not accepted in that case.
+
+>Chaning the roomtype will mean you need to change the price rate also, when you don't send us a price rate we will take the default price rate of this roomtype. (Price rates related to roomtypes this does not apply the other way around)
 
 # Cancel a booking
 Only bookings from `mytourist`, `website` (booking engine) or `api` can be cancelled from this API. We do not allow you to cancel bookings with a live synchronization connection to external platforms.
@@ -106,7 +110,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>arrival</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
-    <tr><td>rate_id</td><td>optional*</td><td>ID of <a href="price-rates.html">price rates</a> (default: 1th listed rate)</td></tr>
+    <tr><td>rate_id</td><td>optional*</td><td>ID of a <a href="price-rates.html">price rate</a> inside the selected roomtype. (default: 1th listed rate)</td></tr>
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
     <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
@@ -115,7 +119,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>note</td><td>optional</td><td>string</td></tr>
     <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>
     <tr><td>forced_logies_price</td><td>optional</td><td>float (to force logies invoice price)</td></tr>
-    <tr><td>invoice_enabled</td><td>optional</td><td>true/false (default:true)</td></tr>
+    <tr><td>invoice_enabled</td><td>optional (only create)</td><td>true/false (default:true)</td></tr>
 </table>
 
 \* Required on creating a booking.
