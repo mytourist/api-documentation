@@ -1,5 +1,6 @@
 ---
 title: API V1 MyTourist
+page.title: test
 layout: default
 ---
 
