@@ -88,12 +88,17 @@ This endpoint will expect that you have already validated the [availability](ava
 
 **POST** `https://app.mytourist.cloud/api/v1/bookings`
 
+# Update a booking
+This action is only allowed for bookings created inside MyTourist, Your API or from the Booking engine. Bookings from external providers are locked fur security and synchronization purposes.
+
+# Cancel a booking
+
 # Available form parameters
 <table>
     <tr><td>channel</td><td>optional</td><td>default: mytourist (<a href="#available-channels">list</a>)</td></tr>
     <tr><td>arrival</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
-    <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
+    <tr><td>room_id</td><td>required*</td><td>ID of a room inside a <a href="roomtypes.html">roomtype</a></td></tr>
     <tr><td>rate_id</td><td>optional*</td><td>ID of <a href="price-rates.html">price rates</a> (default: 1th listed rate)</td></tr>
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
@@ -114,4 +119,3 @@ This endpoint will expect that you have already validated the [availability](ava
     <tr><td>mytourist</td><td>creates booking as it's been created inside the MyTourist interface</td></tr>
     <tr><td>api</td><td>creates booking as external channel. Bookings are locked until you change them via the API</td></tr>
 </table>
-
