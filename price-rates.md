@@ -10,6 +10,9 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 **Index:** 
 - [List all price rates](#list-all-price-rates)
 - [Retrieve a single price rate](#retrieve-a-single-price-rate)
+- [Create a price rate](#create-a-price-rate)
+- [Update a price rate](#create-a-price-rate)
+- [Delete a price rate](#create-a-price-rate)
 
 ## List all price rates
 Get a list of all price rates inside a roomtype.
@@ -81,3 +84,9 @@ Same result as above but than a particular single price rate wil returned in `js
     <tr><td>default_price_per_night</td><td>Default price per night in euro's or in percentages.</td></tr>
     <tr><td>price_per_night_percentage</td><td>Price value is percentage (only available when sub rate)</td></tr>
 </table>
+
+# Create a price rate
+### Update a price rate
+### Delete a price rate
+
+This API endpoint is only available for certified software partners and not for individual MyTourist customers. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.
