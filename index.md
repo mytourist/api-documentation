@@ -24,8 +24,8 @@ REST also implies a nice and clean structure for URLs or endpoints. This means y
 
 Default the throttle limit is 25 requests each 60 seconds. We can individually increase this amount but only on good substantiation. All endpoints will return their data in `JSON` format.
 
-## Get an API key
-The first thing you need is a API key. Each location/company profile has a API key printed inside the API page found in preferences. Of course it’s very important to keep your API key secure. Do not ever share them. 
+## Obtain a API token
+The first thing you need is a API token. Each location-/company profile has a API token printed inside the API page found in preferences. Of course it’s very important to keep your API token secure. Do not ever share them. 
 
 ## Use at your own risk / No warranty
 We validate each request based on basic validation rules and you will operate outside the GUI of MyTourist with all the nice checks inside. You are responsible for the data you will add or change via the API. Each call is logged and kept for at least 24 month. We strongly recommend to test your API first in an dummy company profile before you use your production based company profile. Inside your account settings you are free to manage your company profiles. If your connection causes data to become corrupt, we can charge you to restore a backup of your company profile.
