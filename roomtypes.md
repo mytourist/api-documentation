@@ -59,4 +59,5 @@ Retreive all `roomtypes` created in MyTourist. The results will included all att
 ```
 
 ## Create or update an roomtype
-At this point we **do not** support any changes made by the API. This because roomtypes and individual rooms are most likely connected to external providers and their price rates. 
+
+<span style="color:orange">These API endpoints are only available for certified software partners and not for individual MyTourist customers. This because roomtypes and individual rooms are most likely connected to external providers and their price rates.  Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.</span>
