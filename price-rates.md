@@ -26,6 +26,12 @@ Get a list of all price rates inside a roomtype.
 ```json
 [
     {
+        "id":"23192010281",
+        "default_price_per_night":"70.00",
+        "price_per_night_percentage":false,
+        "...":"..."
+    },
+    {
         "id":"23192011041",
         "parent_id":"23192010281",
         "roomtype_id":"23192010281",
