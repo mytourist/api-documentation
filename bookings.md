@@ -97,6 +97,8 @@ You can either post the changed `JSON` result or just the field(s) you want to c
 
 >Chaning the roomtype will mean you need to change the price rate also, when you don't send us a price rate we will take the default price rate of this roomtype. (Price rates related to roomtypes this does not apply the other way around)
 
+>Use the field `recalculate_invoice_logies` as `true` when you want to recalculate your invoice logies.
+
 # Cancel a booking
 Only bookings from `mytourist`, `website` (booking engine) or `api` can be cancelled from this API. We do not allow you to cancel bookings with a live synchronization connection to external platforms.
 
@@ -112,6 +114,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
     <tr><td>rate_id</td><td>optional*</td><td>ID of a <a href="price-rates.html">price rate</a> inside the selected roomtype. (default: 1th listed rate)</td></tr>
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
+    <tr><td>state</td><td>optional</td><td>optional/confirmed (default:confirmed)</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
     <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
     <tr><td>number_of_children</td><td>optional</td><td>float (number of children inside the guests total)</td></tr>
