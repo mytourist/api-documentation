@@ -89,4 +89,4 @@ Same result as above but than a particular single price rate wil returned in `js
 ### Update a price rate
 ### Delete a price rate
 
-This API endpoint is only available for certified software partners and not for individual MyTourist customers. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.
+<span style="color:orange">These API endpoints are only available for certified software partners and not for individual MyTourist customers. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.</span>
