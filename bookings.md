@@ -89,9 +89,16 @@ This endpoint will expect that you have already validated the [availability](ava
 **POST** `https://app.mytourist.cloud/api/v1/bookings`
 
 # Update a booking
-This action is only allowed for bookings created inside MyTourist, Your API or from the Booking engine. Bookings from external providers are locked fur security and synchronization purposes.
+You can either post the changed `JSON` result or just the field(s) you want to change. When a field is not set, it will be ignored. When you send a empty field it will be restored to the default value or will changed to `null`.
+
+>Bookings from external providers are partial locked fur security and synchronization purposes. `arrival`, `departure` and `channel_reference` fields are not accepted in that case.
 
 # Cancel a booking
+Only bookings from `mytourist`, `website` (booking engine) or `api` can be cancelled from this API. We do not allow you to cancel bookings with a live synchronization connection to external platforms.
+
+**DELETE** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}`
+
+> If, for some reason a booking is out-of-sync, please contact support. 
 
 # Available form parameters
 <table>
