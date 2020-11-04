@@ -4,7 +4,7 @@ layout: default
 ---
 ### [Back to overview](index.html#start-developing-testing-and-deploy)
 ---
-# Debtors API
+# Debtors
 This API endpoint let you manage your debtors. [Parameters](#available-parameters) can be found on the very end of this page.
 
 **Index:** 

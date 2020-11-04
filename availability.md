@@ -1,6 +1,11 @@
+---
+title: Availability
+layout: default
+---
+
 ### [Back to overview](index.html#api-endpoints)
 
-# Availability API
+# Availability
 To check the availability on a single or all `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price rates.
 
 You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rates.html) to create a booking on this date-range (when available).
