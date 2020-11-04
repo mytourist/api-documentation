@@ -90,7 +90,7 @@ This endpoint will expect that you have already validated the [availability](ava
 
 # Available form parameters
 <table>
-    <tr><td>channel</td><td>optional</td><td>default: myTourist (<a href="#available-channels">list</a>)</td></tr>
+    <tr><td>channel</td><td>optional</td><td>default: mytourist (<a href="#available-channels">list</a>)</td></tr>
     <tr><td>arrival</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
@@ -98,7 +98,7 @@ This endpoint will expect that you have already validated the [availability](ava
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
     <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
-    <tr><td>number_of_children</td><td>optional</td><td>float (number of children in guests total)</td></tr>
+    <tr><td>number_of_children</td><td>optional</td><td>float (number of children inside the guests total)</td></tr>
     <tr><td>dietary_wishes</td><td>optional</td><td>string</td></tr>
     <tr><td>note</td><td>optional</td><td>string</td></tr>
     <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>
