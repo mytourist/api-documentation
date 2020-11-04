@@ -112,6 +112,6 @@ This endpoint will expect that you have already validated the [availability](ava
 
 <table>
     <tr><td>mytourist</td><td>creates booking as it's been created inside the MyTourist interface</td></tr>
-    <tr><td>api</td><td>creates booking as external channel bookings are locked until you change them via the API</td></tr>
+    <tr><td>api</td><td>creates booking as external channel. Bookings are locked until you change them via the API</td></tr>
 </table>
 
