@@ -22,6 +22,8 @@ The API implements a Representational state transfer (REST) architecture. Sounds
 
 REST also implies a nice and clean structure for URLs or endpoints. This means you can reach any part of the MyTourist API on https://app.mytourist.com/api/v1 adding the name of the resource you want to interact with.
 
+Default the throttle limit is 25 requests each 60 seconds. We can individually increase this amount but only on good substantiation. All endpoints will return their data in `JSON` format.
+
 ## Get an API key
 The first thing you need is a API key. Each location/company profile has a API key printed inside the API page found in preferences. Of course it’s very important to keep your API key secure. Do not ever share them. 
 
