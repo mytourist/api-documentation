@@ -88,10 +88,10 @@ This endpoint will expect that you have already validated the [availability](ava
 
 **Available form parameters**
 <table>
-    <tr><td>arrival</td><td>required</td><td>>DATE: YYYMMDD</td></tr>
-    <tr><td>departure</td><td>required</td><td>DATE: YYYMMDD</td></tr>
-    <tr><td>roomtype_id</td><td>required</td><td></td></tr>
-    <tr><td>rate_id</td><td>required</td><td></td></tr>
+    <tr><td>arrival</td><td>required</td><td>DATE: YYYYMMDD</td></tr>
+    <tr><td>departure</td><td>required</td><td>DATE: YYYYMMDD</td></tr>
+    <tr><td>roomtype_id</td><td>required</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
+    <tr><td>rate_id</td><td>optional</td><td>ID of <a href="price-rates.html">price rates</a> (default: 1th listed rate)</td></tr>
     <tr><td>debtor_id</td><td>optional</td><td></td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
     <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
@@ -102,5 +102,4 @@ This endpoint will expect that you have already validated the [availability](ava
     <tr><td>forced_logies_price</td><td>optional</td><td>float (to force logies invoice price)</td></tr>
     <tr><td>invoice_enabled</td><td>optional</td><td>true/false (default:true)</td></tr>
 </table>
-
 
