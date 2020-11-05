@@ -16,7 +16,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
 - [API Endpoints](#api-endpoints)
 
-    - [PriceRates](price-rates.html)
+    - [PriceRates](#PriceRates)
     - [ProductCategories](product-categories.html)
     - [Products](products.html)
     - [Roomtypes](roomtypes.html)
