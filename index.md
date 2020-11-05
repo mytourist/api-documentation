@@ -15,8 +15,8 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
 - [HTTP responses table](#http-responses-table)
+- [API Endpoints](#api-endpoints)
 
-[API Endpoints](#api-endpoints)
 > [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 
 
