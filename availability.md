@@ -57,14 +57,14 @@ You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rate
 ```
 
 # Availability calendar
-This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month.
+This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month. You can take all your roomtypes or just one single
 
-
-**GET** `https://app.mytourist.cloud/api/v1/availability/{ROOMTYPE_ID}?date=20251215`
+**POST** `https://app.mytourist.cloud/api/v1/availability/`
 
 **Query Parameters**
 <table>
-    <tr><td>date</td><td>required</td><td>YYYY-MM-DD (it will automatically determine the month)</td></tr>    
+    <tr><td>date</td><td>required</td><td>YYYY-MM-DD (it will automatically determine the month range)</td></tr>    
+    <tr><td>roomtype_id</td><td>optional</td><td>@id from <a href="roomtypes.html">roomtypes</a></td></tr>    
 </table>
 
 **Example result**
