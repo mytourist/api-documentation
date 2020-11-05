@@ -16,17 +16,8 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
 - [API Endpoints](#api-endpoints)
 
-    - [PriceRates](#PriceRates)
-    - [ProductCategories](product-categories.html)
-    - [Products](products.html)
-    - [Roomtypes](roomtypes.html)
-    - [TaxRates](tax-rates.html)
-    - [Invoices](invoices.html)
-    - [Bookings](bookings.html)
-    - [Debtors](debtors.html)
-    - [Availability](availability.html)
+- > [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 - [HTTP responses table](#http-responses-table)
-
 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
