@@ -14,8 +14,10 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Risk and warranty](#use-at-your-own-risk--no-warranty)
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
-- [API Endpoints](#api-endpoints)
 - [HTTP responses table](#http-responses-table)
+- [API Endpoints](#api-endpoints)
+
+> [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 
 
 ## The MyTourist REST API
@@ -48,7 +50,7 @@ By far [Postman](https://www.postman.com/) is a great tool to help you out in th
 # API Endpoints
 
 >### [Availability](availability.html)
->Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
+>Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html) or jump direct to [Availability check](availability.html#availability-check), [Availability calendar results](availability.html#availability-calendar-results)
 
 >### [Debtors](debtors.html)
 >Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
@@ -79,4 +81,5 @@ By far [Postman](https://www.postman.com/) is a great tool to help you out in th
     <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
     <tr><td>400</td><td>FAILED</td><td>Not all required parameters/fields are set to execute this request.</td></tr>
     <tr><td>404</td><td>FAILED</td><td>URL incorrect or requested data no longer exists.</td></tr>
+    <tr><td>500</td><td>FAILED</td><td>Data you'll send us, can not be parsed.</td></tr>
 </table>

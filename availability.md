@@ -6,6 +6,15 @@ layout: default
 ### [Back to overview](index.html#api-endpoints)
 
 # Availability
+When you want to check the availability of a specific date range with the calculated total price (logies) for you can take the `Availability check` endpoint. After calling you have enough data to push a <a href="bookings.html">booking</a>. When you want the availability and price per day for like calendar purposes you'll take the `Availability calendar results` endpoint. 
+
+>Both endpoints are fully cached results, the cache will refresh after a change took place in your account. It may take a few minutes to implement those changes into the cache.
+
+**Index:** 
+- [Availability check](#availability-check)
+- [Availability calendar results](#availability-calendar-results)
+
+## Availability check
 To check the availability on a single or all `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price rates.
 
 You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rates.html) to create a booking on this date-range (when available).
@@ -54,4 +63,57 @@ You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rate
         ...
     }
 ]
+```
+
+## Availability calendar results
+This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month. You can take all your roomtypes or just one single
+
+**POST** `https://app.mytourist.cloud/api/v1/availability/`
+
+**Query Parameters**
+<table>
+    <tr><td>date</td><td>required</td><td>YYYY-MM-DD (it will automatically determine the month range)</td></tr>    
+    <tr><td>roomtype_id</td><td>optional</td><td>@id from <a href="roomtypes.html">roomtypes</a></td></tr>    
+</table>
+
+**Example result**
+```json
+{
+    "23192010281":{
+        "2020-12-01":{
+            "availability":{
+                "value":2,
+                "custom_value":false
+            },
+            "prices":{
+                "23192010281":{
+                    "name":"Standaard",
+                    "custom_value":false,
+                    "price":80
+                },
+                "..." : "..."
+            }
+        },
+        "2020-12-02":{
+            "availability":{
+                "value":1,
+                "custom_value":false
+            },
+            "prices":{
+                "23192010281":{
+                    "name":"Standaard",
+                    "custom_value":false,
+                    "price":80
+                },
+                "..." : "..."
+            }
+        },
+        "..." : "..."
+    },
+    "23192010281":{
+        "2020-12-01" : {
+            "..." : "..."
+        }
+    }
+}
 ```
