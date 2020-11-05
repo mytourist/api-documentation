@@ -15,6 +15,15 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
 - [API Endpoints](#api-endpoints)
+    - [PriceRates](price-rates.html)
+    - [ProductCategories](product-categories.html)
+    - [Products](products.html)
+    - [Roomtypes](roomtypes.html)
+    - [TaxRates](tax-rates.html)
+    - [Invoices](invoices.html)
+    - [Bookings](bookings.html)
+    - [Debtors](debtors.html)
+    - [Availability](availability.html)
 - [HTTP responses table](#http-responses-table)
 
 
@@ -48,7 +57,7 @@ By far [Postman](https://www.postman.com/) is a great tool to help you out in th
 # API Endpoints
 
 >### [Availability](availability.html)
->Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
+>Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html) or jump direct to [Availability check](availability.html#availability-check), [Availability calendar results](availability.html#availability-calendar-results)
 
 >### [Debtors](debtors.html)
 >Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
