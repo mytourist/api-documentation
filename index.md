@@ -14,6 +14,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Risk and warranty](#use-at-your-own-risk--no-warranty)
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
+- [Webhooks](#webhooks)
 - [HTTP responses table](#http-responses-table)
 - [API Endpoints](#api-endpoints)
 
@@ -47,6 +48,17 @@ For some eg. `create/update` endpoints an really good understanding of the OTA p
 ## Start developing, test and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
+# Webhooks
+In Mytourist you will find the webhooks page within the settings page. Here you can enter URLs with a corresponding trigger point. As soon as a booking is checked in, checked out, created, edited or canceled, we will send a POST request to the URL you entered. This request contains all booking data as described on [the booking endpoint](bookings.html#retrieve-a-single-booking).
+
+# HTTP responses table
+<table>
+    <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
+    <tr><td>400</td><td>FAILED</td><td>Not all required parameters/fields are set to execute this request.</td></tr>
+    <tr><td>404</td><td>FAILED</td><td>URL incorrect or requested data no longer exists.</td></tr>
+    <tr><td>500</td><td>FAILED</td><td>Data you'll send us, can not be parsed.</td></tr>
+</table>
+
 # API Endpoints
 
 >### [Availability](availability.html)
@@ -75,11 +87,3 @@ By far [Postman](https://www.postman.com/) is a great tool to help you out in th
 
 >### [PriceRates](price-rates.html)
 >Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](price-rates.html#list-all-price-rates),[Retrieve a single price rate](price-rates.html#retrieve-a-single-price-rate), [Create a price rate](price-rates.html#create-a-price-rate), [Update a price rate](price-rates.html#create-a-price-rate), [Delete a price rate](price-rates.html#create-a-price-rate).
-
-# HTTP responses table
-<table>
-    <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
-    <tr><td>400</td><td>FAILED</td><td>Not all required parameters/fields are set to execute this request.</td></tr>
-    <tr><td>404</td><td>FAILED</td><td>URL incorrect or requested data no longer exists.</td></tr>
-    <tr><td>500</td><td>FAILED</td><td>Data you'll send us, can not be parsed.</td></tr>
-</table>
