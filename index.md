@@ -51,6 +51,8 @@ By far [Postman](https://www.postman.com/) is a great tool to help you out in th
 # Webhooks
 In Mytourist you will find the webhooks page within the settings page. Here you can enter URLs with a corresponding trigger point. As soon as a booking is checked in, checked out, created, edited or canceled, we will send a POST request to the URL you entered. This request contains all booking data as described on [the booking endpoint](bookings.html#retrieve-a-single-booking).
 
+To test your webhooks, we recommend using <a href="https://webhook.site/" target="_blank">https://webhook.site/</a>.
+
 # HTTP responses table
 <table>
     <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
