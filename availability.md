@@ -5,7 +5,7 @@ layout: default
 
 ### [Back to overview](index.html#api-endpoints)
 
-# Availability
+# Availability check for date range
 To check the availability on a single or all `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price rates.
 
 You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rates.html) to create a booking on this date-range (when available).
@@ -54,4 +54,57 @@ You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rate
         ...
     }
 ]
+```
+
+# Availability calendar
+This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month.
+
+
+**GET** `https://app.mytourist.cloud/api/v1/availability/{ROOMTYPE_ID}?date=20251215`
+
+**Query Parameters**
+<table>
+    <tr><td>date</td><td>required</td><td>YYYY-MM-DD (it will automatically determine the month)</td></tr>    
+</table>
+
+**Example result**
+```json
+{
+    "23192010281":{
+        "2020-12-01":{
+            "availability":{
+                "value":2,
+                "custom_value":false
+            },
+            "prices":{
+                "23192010281":{
+                    "name":"Standaard",
+                    "custom_value":false,
+                    "price":80
+                },
+                "..." : "..."
+            }
+        },
+        "2020-12-02":{
+            "availability":{
+                "value":1,
+                "custom_value":false
+            },
+            "prices":{
+                "23192010281":{
+                    "name":"Standaard",
+                    "custom_value":false,
+                    "price":80
+                },
+                "..." : "..."
+            }
+        },
+        "..." : "..."
+    },
+    "23192010281":{
+        "2020-12-01" : {
+            "..." : "..."
+        }
+    }
+}
 ```

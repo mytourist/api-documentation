@@ -79,4 +79,5 @@ By far [Postman](https://www.postman.com/) is a great tool to help you out in th
     <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
     <tr><td>400</td><td>FAILED</td><td>Not all required parameters/fields are set to execute this request.</td></tr>
     <tr><td>404</td><td>FAILED</td><td>URL incorrect or requested data no longer exists.</td></tr>
+    <tr><td>500</td><td>FAILED</td><td>Data you'll send us, can not be parsed.</td></tr>
 </table>
