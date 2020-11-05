@@ -49,7 +49,7 @@ For some eg. `create/update` endpoints an really good understanding of the OTA p
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
 
 # Webhooks
-In Mytourist you will find the webhooks page within the settings page. Here you can enter URLs with a corresponding trigger point. As soon as a booking is checked in, checked out, created, edited or canceled, we will send a POST request to the URL you entered. This request contains all booking data as described on [the booking endpoint](bookings.html#retrieve-a-single-booking).
+In Mytourist you will find the webhooks page within the settings page. Here you can enter URLs with a corresponding trigger point. As soon as a booking is checked in, checked out, created, edited or canceled, we will send a POST request to the URL you entered. This request contains `trigger` field and all booking data as described in the example `json` on [the booking endpoint](bookings.html) documentation page.
 
 To test your webhooks, we recommend using <a href="https://webhook.site/" target="_blank">https://webhook.site/</a>.
 
