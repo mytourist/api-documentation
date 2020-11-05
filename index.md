@@ -15,6 +15,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
 - [API Endpoints](#api-endpoints)
+
     - [PriceRates](price-rates.html)
     - [ProductCategories](product-categories.html)
     - [Products](products.html)
