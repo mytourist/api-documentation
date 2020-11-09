@@ -66,7 +66,7 @@ You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rate
 ```
 
 ## Availability calendar results
-This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month. You can take all your roomtypes or just one single
+This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month. You can take all your roomtypes or just one single.
 
 **POST** `https://app.mytourist.cloud/api/v1/availability/`
 
@@ -79,36 +79,28 @@ This endpoint will return the `available` rooms and current price per `price rat
 **Example result**
 ```json
 {
-    "23192010281":{
-        "2020-12-01":{
+    "4719120611":{
+        "2020-11-30":{
             "availability":{
                 "value":2,
                 "custom_value":false
             },
+            "min_stay":2,
+            "max_stay":null,
+            "closed_on_arrival":true,
+            "closed_on_departure":false,
             "prices":{
                 "23192010281":{
-                    "name":"Standaard",
+                    "name":"My Default price rate",
                     "custom_value":false,
                     "price":80
                 },
                 "..." : "..."
             }
         },
-        "2020-12-02":{
-            "availability":{
-                "value":1,
-                "custom_value":false
-            },
-            "prices":{
-                "23192010281":{
-                    "name":"Standaard",
-                    "custom_value":false,
-                    "price":80
-                },
-                "..." : "..."
-            }
-        },
-        "..." : "..."
+        "2020-12-01" : {
+            "..." : "..."
+        }
     },
     "23192010281":{
         "2020-12-01" : {
