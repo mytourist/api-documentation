@@ -85,15 +85,15 @@ This endpoint will return the `available` rooms and current price per `price rat
                 "value":2,
                 "custom_value":false
             },
-            "min_stay":2,
-            "max_stay":null,
-            "closed_on_arrival":true,
-            "closed_on_departure":false,
             "prices":{
                 "23192010281":{
                     "name":"My Default price rate",
                     "custom_value":false,
-                    "price":80
+                    "price":80,
+                    "min_stay":2,
+                    "max_stay":null,
+                    "closed_on_arrival":true,
+                    "closed_on_departure":false
                 },
                 "..." : "..."
             }
