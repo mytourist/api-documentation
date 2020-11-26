@@ -79,8 +79,21 @@ This endpoint will return the `available` rooms and current price per `price rat
 **Example result**
 ```json
 {
+    "@roomtype_id":{
+        "@date(YYYYMMDD)":{
+            "availability":{
+                ".." : ".."
+            },
+            "prices": {
+                "@rate_id" : {
+                    ".." : ".."
+                }
+            }
+        }
+    },
+
     "4719120611":{
-        "2020-11-30":{
+        "20201130":{
             "availability":{
                 "value":2,
                 "custom_value":false
@@ -98,7 +111,7 @@ This endpoint will return the `available` rooms and current price per `price rat
                 "..." : "..."
             }
         },
-        "2020-12-01" : {
+        "20201201" : {
             "..." : "..."
         }
     },

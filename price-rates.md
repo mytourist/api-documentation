@@ -53,7 +53,7 @@ Get a list of all price rates inside a roomtype.
         "closed_on_departure":"tu,we,th,fr,sa",
         "default_price_per_night":"10.00", 
         "price_per_night_percentage":true,
-        "arrangement_products_inlcuded":[
+        "arrangement_products_inclusive":[
             {
                 "id":"231920110418",
                 "name":{

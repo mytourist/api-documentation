@@ -117,8 +117,8 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>state</td><td>optional</td><td>optional/confirmed (default:confirmed)</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
-    <tr><td>number_of_guests</td><td>optional</td><td>float</td></tr>
-    <tr><td>number_of_children</td><td>optional</td><td>float (number of children inside the guests total)</td></tr>
+    <tr><td>number_of_guests</td><td>optional</td><td>integer</td></tr>
+    <tr><td>number_of_children</td><td>optional</td><td>integer (number of children inside the guests total)</td></tr>
     <tr><td>dietary_wishes</td><td>optional</td><td>string</td></tr>
     <tr><td>note</td><td>optional</td><td>string</td></tr>
     <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>

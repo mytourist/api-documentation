@@ -19,7 +19,7 @@ Get a list of all your debtors returned in `JSON` format.
 **Results**
 ```json
 {
-    "debtor_id":"23192010299",
+    "id":"23192010299",
     "company_name":null,
     "company_chamber_id":null,
     "first_name":"Max",
@@ -28,7 +28,7 @@ Get a list of all your debtors returned in `JSON` format.
     "...":"..."
 },
 {
-    "debtor_id":"23192010300",
+    "id":"23192010300",
     "company_name":null,
     "company_chamber_id":null,
     "first_name":"Daniel",
@@ -47,7 +47,7 @@ Get a single Debtor returned in `JSON` format. We also add all the bookings atta
 **Results**
 ```json
 {
-    "debtor_id":"23192010299",
+    "id":"23192010299",
     "company_name":null,
     "company_chamber_id":null,
     "first_name":"Max",
@@ -57,17 +57,17 @@ Get a single Debtor returned in `JSON` format. We also add all the bookings atta
 
     "bookings":[
         {
-            "state":"archived",
-            "unique":231920102956,
+            "id":231920102956,
+            "state":"archived",            
             "arrival":"20201008",
             "departure":"20201011"
         }
     ],
     "invoices":[
         {
+            "id":"P1120078",
             "state":"open",
-            "type":"proforma",
-            "unique":"P1120078"
+            "type":"proforma"
         }
     ]
 }
