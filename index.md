@@ -95,6 +95,7 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 
 
 # API Endpoints (certified access only)
+For the endpoints below, your own authentication bearer token in MyTourist must be marked as `certified`. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> or start a ticket to begin the certification process.
 
 ### [ObtainBearerToken](obtain-bearer-token.html)
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)

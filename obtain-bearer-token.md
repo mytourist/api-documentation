@@ -7,7 +7,7 @@ layout: default
 # Obtain bearer token
 This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token.
 
-> Your own authentication bearer token in MyTourist must be enabled for this function. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> to enable this function.
+> For this endpoint, your own authentication bearer token in MyTourist must be marked as `certified`. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> or start a ticket to begin the certification process.
 
 **POST** `https://app.mytourist.cloud/api/v1/obtain-bearer-Token`
 
