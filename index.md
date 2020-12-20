@@ -20,7 +20,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 
 > [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 
-- [API Endpoints for booking platforms](#api-endpoints-for-booking-platforms)
+- [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 
 > [ObtainBearerToken](obtain-bearer-token.html)
 
@@ -94,7 +94,7 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 >Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](price-rates.html#list-all-price-rates),[Retrieve a single price rate](price-rates.html#retrieve-a-single-price-rate), [Create a price rate](price-rates.html#create-a-price-rate), [Update a price rate](price-rates.html#create-a-price-rate), [Delete a price rate](price-rates.html#create-a-price-rate).
 
 
-# API Endpoints for booking platforms
+# API Endpoints (certified access only)
 
 ### [ObtainBearerToken](obtain-bearer_token.html)
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
