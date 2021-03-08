@@ -94,6 +94,8 @@ This endpoint will expect that you have already validated the [availability](ava
 # Update a booking
 You can either post the changed `JSON` result or just the field(s) you want to change. When a field is not set, it will be ignored. When you send a empty field it will be restored to the default value or will changed to `null`.
 
+**POST** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}`
+
 >Bookings from external providers are partial locked fur security and synchronization purposes. `arrival`, `departure` and `channel_reference` fields are not accepted in that case.
 
 >Chaning the roomtype will mean you need to change the price rate also, when you don't send us a price rate we will take the default price rate of this roomtype. (Price rates related to roomtypes this does not apply the other way around)
