@@ -99,3 +99,7 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 ### [ObtainBearerToken](obtain-bearer-token.html)
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
+
+### Updates
+
+**2021 06 02** - We added `related_bookings` to the [Retrieve a single booking](bookings.html#retrieve-a-single-booking) endpoint. This way you can retrieve directly all the related sub-bookings (each booked room has their own booking_id) and also see which booking is the _main_ booking. In previous version only the main-booking gave back all the invoice data. We'd changed that so either the _main_ of related _sub_ booking return _the_ invoice.

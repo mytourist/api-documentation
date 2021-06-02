@@ -68,6 +68,24 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
             "total_amount_excl_vat":240,
             "has_amount_to_pay":true
         },
+        "related_bookings": [
+            {
+                "id": 1210531315,
+                "is_main_booking": false
+            },
+            {
+                "id": 1210531313,
+                "is_main_booking": false
+            },
+            {
+                "id": 1210531312,
+                "is_main_booking": true
+            },
+            {
+                "id": 1210531314,
+                "is_main_booking": false
+            }
+        ],
         "created_at":"2020-10-29 12:25:16",
         "updated_at":"2020-10-29 12:25:16",
         "checkin_at":"2020-11-04 14:35:51",
