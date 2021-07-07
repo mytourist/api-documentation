@@ -99,14 +99,13 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
 ```
 
 # List of bookings from specific debtor
-As above, this function provides a list view of all bookings. But now based on a specific debtor number. It is also possible to set an `roomtype_id` to only fetch bookings for this roomtype.
+Like [List of bookings between dates](#list-of-bookings-between-dates), this function provides a list view of all bookings. But now based on a specific [debtor](debtors.html) number.
 
 **GET** `https://app.mytourist.cloud/api/v1/bookings/from-debtor?debtor_id={DEBTOR_ID}`
 
 **Query Parameters**
 <table>
-    <tr><td>debtor_id</td><td>required</td><td></td></tr>    
-    <tr><td>roomtype_id</td><td>optional</td><td>The API will only return the results for this particular <a href="roomtypes.html">roomtypes</a>.</td></tr>
+    <tr><td>debtor_id</td><td colspan="2">required</td></tr>
     <tr><td>show_cancellations</td><td>optional</td><td>boolean; true</td></tr>
 </table>
 
