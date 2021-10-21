@@ -25,6 +25,8 @@ Get a list of all your debtors returned in `JSON` format.
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
+    "latitude" : "27.606888", 
+    "longitude" : "-42.670898", 
     "...":"..."
 },
 {
@@ -34,6 +36,8 @@ Get a list of all your debtors returned in `JSON` format.
     "first_name":"Daniel",
     "last_name":"Musterman",
     "address":"streetname 66",
+    "latitude" : "27.606888", 
+    "longitude" : "-42.670898", 
     "...":"..."
 }
 ```
@@ -53,6 +57,8 @@ Get a single Debtor returned in `JSON` format. We also add all the bookings atta
     "first_name":"Max",
     "last_name":"Musterman",
     "address":"streetname 55 Block 3",
+    "latitude" : "27.606888", 
+    "longitude" : "-42.670898", 
     "...":"...",
 
     "bookings":[
@@ -93,4 +99,6 @@ You can create or update a debtor by posting to the following URL. This endpoint
     <tr><td>phone</td><td>optional</td><td></td></tr>
     <tr><td>email</td><td>optional</td><td></td></tr>
     <tr><td>note</td><td>optional</td><td></td></tr>
+    <tr><td>latitude</td><td>optional</td><td>Float like eg. 27.606888</td></tr>
+    <tr><td>longitude</td><td>optional</td><td>Float like eg. -42.670898</td></tr>
 </table>
