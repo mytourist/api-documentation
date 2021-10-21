@@ -22,7 +22,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
-- [Updates](#updates) (2021-10-22)
+- [Updates](#updates) <sub>Latest 22th october '21</sub>
 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
