@@ -102,10 +102,13 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 # Updates
 
-**2021 10 19** - Added mobile phone number to the endpoint [debtor](debtors.html).    
-**2021 10 19** - Full debtor data is also shown on the [bookings](bookings.html) endpoint.    
-**2021 10 19** - Expected arrival is retrieve and editable from the [bookings](bookings.html) endpoint.    
-**2021 10 19** - We now trigger also the webhook `booking_updated` when an debtor is detached from the booking itself.    
+**2021 10 22** - Latitude and Longitude (view and editable) added to the [debtors](debtors.html) endpoint.
+
+**2021 10 19**    
+- Added mobile phone number to the endpoint [debtor](debtors.html).
+- Full debtor data is also shown on the [bookings](bookings.html) endpoint.
+- Expected arrival is retrieve and editable from the [bookings](bookings.html) endpoint.
+- We now trigger also the webhook `booking_updated` when an debtor is detached from the booking itself.
 
 **2021 07 07** - We added a new bookings endpoint [List of bookings from specific debtor](#list-of-bookings-from-specific-debtor). Like [List of bookings between dates](#list-of-bookings-between-dates), this function provides a list view of all bookings. But now based on a specific [debtor](debtors.html) ID.
 
