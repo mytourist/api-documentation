@@ -47,6 +47,17 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
             "placed_in_room":"Room 1"
         },
         "debtor_id":"23192010294",
+        "debtor":{
+            "id":"23192010299",
+            "company_name":null,
+            "company_chamber_id":null,
+            "first_name":"Max",
+            "last_name":"Musterman",
+            "address":"streetname 55 Block 3",
+            "latitude" : "27.606888", 
+            "longitude" : "-42.670898", 
+            "...":"..."
+        },
         "number_of_guests":4,
         "number_of_children":2,
         "dietary_wishes":"No Gluten",
