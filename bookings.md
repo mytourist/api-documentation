@@ -39,6 +39,7 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
         "state":"confirmed",
         "arrival":"2023-10-08",
         "departure":"2023-10-11",
+        "expected_arrival_time": "19:00:00",
         "auto_send_email":true,
         "roomtype":{
             "id":"23192010281",
@@ -156,6 +157,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>
     <tr><td>forced_logies_price</td><td>optional</td><td>float (to force logies invoice price)</td></tr>
     <tr><td>invoice_enabled</td><td>optional (only create)</td><td>true/false (default:true)</td></tr>
+    <tr><td>expected_arrival_time</td><td>optional</td><td>Time like eg. 18.00 (Stay between the time range you did setup inside the [insights preferences](https://app.mytourist.cloud/app/property/insights-preferences))</td></tr>
 </table>
 
 \* Required on creating a booking.
