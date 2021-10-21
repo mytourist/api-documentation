@@ -102,6 +102,11 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 # Updates
 
+**2021 10 19** - Added mobile phone number to the endpoint [debtor](debtors.html).    
+**2021 10 19** - Full debtor data is also shown on the [bookings](bookings.html) endpoint.    
+**2021 10 19** - Expected arrival is retrieve and editable from the [bookings](bookings.html) endpoint.    
+**2021 10 19** - We now trigger also the webhook `booking_updated` when an debtor is detached from the booking itself.    
+
 **2021 07 07** - We added a new bookings endpoint [List of bookings from specific debtor](#list-of-bookings-from-specific-debtor). Like [List of bookings between dates](#list-of-bookings-between-dates), this function provides a list view of all bookings. But now based on a specific [debtor](debtors.html) ID.
 
 **2021 06 02** - We added `related_bookings` to the response JSON for the endpoints [Retrieve a single booking](bookings.html#retrieve-a-single-booking) and [List bookings between dates](bookings.html#list-bookings-between-dates). This way you can retrieve directly all the related sub-bookings (each booked room has their own booking `id`). Also check which booking is the _main_ booking. In previous version only the main-booking gave back all the invoice data. We'd changed that so either the _main_ of related _sub_ booking return _the_ invoice.
