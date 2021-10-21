@@ -167,8 +167,8 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>note</td><td>optional</td><td>string</td></tr>
     <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>
     <tr><td>forced_logies_price</td><td>optional</td><td>float (to force logies invoice price)</td></tr>
-    <tr><td>invoice_enabled</td><td>optional (only create)</td><td>true/false (default:true)</td></tr>
     <tr><td>expected_arrival_time</td><td>optional</td><td>Time like eg. 18.00 (Stay between the time range you did setup inside the <a target="_blank" href="https://app.mytourist.cloud/app/property/insights-preferences">insights preferences</a>)</td></tr>
+    <tr><td>invoice_enabled</td><td>optional (only create)</td><td>true/false (default:true)</td></tr>
 </table>
 
 \* Required on creating a booking.
