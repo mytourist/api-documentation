@@ -6,14 +6,12 @@ layout: default
 ### [Back to overview](index.html#api-endpoints)
 
 # Availability
-When you want to check the availability of a specific date range with the calculated total price (logies) for you can take the `Availability check` endpoint. After calling you have enough data to push a <a href="bookings.html">booking</a>. When you want the availability and price per day for like calendar purposes you'll take the `Availability calendar results` endpoint. 
+When you want to check the availability of a specific date range with the calculated total price (logies) for you can take the `Availability check` endpoint. After calling you have enough data to push a <a href="bookings.html">booking</a>. 
 
->Both endpoints are fully cached results, the cache will refresh after a change took place in your account. It may take a few minutes to implement those changes into the cache.
+> NOTICE: When you want the availability and price per day for like calendar purposes you'll take the `Availability calendar results` endpoint. 
 
-**Index:** 
-- [Availability based on arrival and departure date](#availability-based-on-arrival-and-departure-date)
-- [Availability based on calendar month](#availability-based-on-calendar-month)
-- [Availability manage stock and restrictions](#availability-manage-stock-and-restrictions)
+>This endpoint is an fully cached results, the cache will refresh after a change took place in your account. It may take a few minutes to implement those changes into the cache.
+
 
 ## Availability based on arrival and departure date
 To check the availability on a single or all `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price rates.
