@@ -18,7 +18,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [HTTP responses table](#http-responses-table)
 - [API Endpoints](#api-endpoints)
 
-> [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
+> [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
@@ -67,8 +67,11 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 
 # API Endpoints
 
+>### [Calendar](calendar.html)
+>The MyTourist calendar is the centralized space where all the magic happens. Your bookings, price rates, available rooms, and restrictions like min./max. stay and check-in/out restrictions printed into one single calendar. [Go to the documentation](calendar.html)  or jump direct to [Fetch the calendar data](calendar.html#fetch-the-calendar-data) or [Bulk changes](calendar.html#bulk-changes)
+
 >### [Availability](availability.html)
->Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html) or jump direct to [Availability check](availability.html#availability-check), [Availability calendar results](availability.html#availability-calendar-results)
+>Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
 >### [Debtors](debtors.html)
 >Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
