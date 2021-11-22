@@ -103,7 +103,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 ```
 
 ### Example 2 | setup only arrivals on Monday/Tuesday and Departures on Friday/Saturday between longer period.
-In this example we will lower the number of available rooms from 4 to just 1 available room.
+In this example we give the weekdays witch allowed to arrive and depart. The weekdays now given will be closed for arrival or departure.
 
 ```
 curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}' \
