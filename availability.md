@@ -11,10 +11,11 @@ When you want to check the availability of a specific date range with the calcul
 >Both endpoints are fully cached results, the cache will refresh after a change took place in your account. It may take a few minutes to implement those changes into the cache.
 
 **Index:** 
-- [Availability check](#availability-check)
-- [Availability calendar results](#availability-calendar-results)
+- [Availability based on arrival and departure date](#availability-based-on-arrival-and-departure-date)
+- [Availability based on calendar month](#availability-based-on-calendar-month)
+- [Availability manage stock and restrictions](#availability-manage-stock-and-restrictions)
 
-## Availability check
+## Availability based on arrival and departure date
 To check the availability on a single or all `roomtypes` in a specific date-range. The API will always return the number of available `rooms` in this `roomtype`. The API will also return some additional information about your roomtype to prevent extra API calls to the roomtype endpoint. Inside each `roomtype` you will find the price rates.
 
 You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rates.html) to create a booking on this date-range (when available).
@@ -65,7 +66,7 @@ You can use the preferred [roomtype](roomtypes.html) and [price-rate](price-rate
 ]
 ```
 
-## Availability calendar results
+## Availability based on calendar month
 This endpoint will return the `available` rooms and current price per `price rate` for each day of the given month. You can take all your roomtypes or just one single.
 
 **POST** `https://app.mytourist.cloud/api/v1/availability/`
@@ -74,6 +75,7 @@ This endpoint will return the `available` rooms and current price per `price rat
 <table>
     <tr><td>date</td><td>required</td><td>YYYY-MM-DD (it will automatically determine the month range)</td></tr>    
     <tr><td>roomtype_id</td><td>optional</td><td>@id from <a href="roomtypes.html">roomtypes</a></td></tr>    
+    <tr><td>language</td><td>optional</td><td>ISO 639-1</td></tr>    
 </table>
 
 **Example result**
@@ -122,3 +124,23 @@ This endpoint will return the `available` rooms and current price per `price rat
     }
 }
 ```
+
+## Manage calendar bulk changes like; stock, price and restrictions.
+As in MyTourist, inside the calendar you can overwrite the default price rate defaults like; price, available rooms, min. stay, max. stay and so on. With this functions it's no longer needed to make bulk changes to your calendar via the MyTourist GUI. 
+
+**POST** `https://app.mytourist.cloud/api/v1/availability/custom`
+
+**Query Parameters**
+<table>
+    <tr><td>from</td><td>required</td><td>YYYY-MM-DD</td></tr>    
+    <tr><td>until</td><td>required</td><td>YYYY-MM-DD</td></tr>       
+    <tr><td>rate_id</td><td>required</td><td>The unique price_rate @id</td></tr>       
+    <tr><td>min_stay</td><td>optional</td><td>Nights</td></tr>       
+    <tr><td>max_stay</td><td>optional</td><td>Nights</td></tr>       
+    <tr><td>min_advance</td><td>optional</td><td>0-72 hours.</td></tr>       
+    <tr><td>max_advance</td><td>optional</td><td>1-30 days</td></tr>       
+    <tr><td>may_checkin_on</td><td>optional</td><td>mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
+    <tr><td>may_checkout_on</td><td>optional</td><td>mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
+    <tr><td>logies_amount</td><td>optional</td><td>decimal 10,2</td></tr>       
+</table>
+
