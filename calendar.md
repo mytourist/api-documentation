@@ -83,13 +83,12 @@ With this function you can manage and overwrite the following values of; `availa
 <table>
     <tr><td>from</td><td>required</td><td>YYYY-MM-DD</td></tr>    
     <tr><td>until</td><td>required</td><td>YYYY-MM-DD</td></tr>       
-    <tr><td>rate_id</td><td>required</td><td>The unique price_rate @id</td></tr> 
-    <tr><td>rooms_to_sell</td><td>optional</td><td>Won't go higher than the exact number of rooms. `rooms_to_sell` = `rooms_to_sell` MINUS `number_of_bookings`</td></tr>       
-    <tr><td>min_stay</td><td>optional</td><td>Nights</td></tr>       
-    <tr><td>max_stay</td><td>optional</td><td>Nights</td></tr>         
-    <tr><td>may_checkin_on</td><td>optional</td><td>mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
-    <tr><td>may_checkout_on</td><td>optional</td><td>mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
-    <tr><td>price_per_night</td><td>optional</td><td>decimal 10,2</td></tr>       
+    <tr><td>rooms_to_sell</td><td>optional</td><td>Won't go higher than the exact number of rooms. `rooms_to_sell` = `rooms_to_sell` MINUS `number_of_bookings` (calculated automatically) or use `auto` for the default value</td></tr>       
+    <tr><td>min_stay</td><td>optional</td><td>Nights or use `auto` for the default value</td></tr>       
+    <tr><td>max_stay</td><td>optional</td><td>Nights or use `auto` for the default value</td></tr>         
+    <tr><td>may_checkin_on</td><td>optional</td><td>Default: mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
+    <tr><td>may_checkout_on</td><td>optional</td><td>Default: mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
+    <tr><td>price_per_night</td><td>optional</td><td>decimal 10,2  or use `auto` for the default value</td></tr>       
 </table>
 
 ### Example 1 | change availability for one single day.
@@ -100,5 +99,5 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-01"' \
---form 'available="1"'
+--form 'rooms_to_sell="1"'
 ```
