@@ -111,7 +111,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'from="2030-01-01"' \
 --form 'until="2030-05-15"' \
 --form 'may_checkin_on="mo,tu"' \
---form 'may_checkin_on="fr,sa"'
+--form 'may_checkout_on="fr,sa"'
 ```
 
 #### Example 3 | Change price for one week
@@ -123,4 +123,20 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-07"' \
 --form 'price_per_nights="100,00"'
+```
+
+#### Example 4 | Reset everything into their defaults
+This will take the default availability and the price and restrictions from the price rate.
+
+```
+curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}' \
+--header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
+--form 'from="2030-01-01"' \
+--form 'until="2030-01-07"' \
+--form 'rooms_to_sell="auto"'\
+--form 'price_per_nights="auto"'\
+--form 'min_stay="auto"'\
+--form 'max_stay="auto"'\
+--form 'may_checkin_on="mo,tu,we,th,fr,sa,su"'\
+--form 'may_checkout_on="mo,tu,we,th,fr,sa,su"'\
 ```
