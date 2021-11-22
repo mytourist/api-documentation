@@ -23,7 +23,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
 
-- [Latest update 22th october '21](#updates)
+- [Latest update 22th november '21](#updates)
 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
@@ -105,6 +105,8 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
 
 # Updates
+
+**2021 11 22** - We moved the `Availability Monthly calendar` from the availability endpoint into it's own endpoint called [calendar](calender.html). This because we released [bulk changes](calendar.html#bulk-changes) into our API which is also an endpoint for the calendar. The old `POST` url into the availability endpoint is still working and redirects automatically to the new endpoint.
 
 **2021 10 22** - Latitude and Longitude (view and editable) added to the [debtors](debtors.html) endpoint.
 
