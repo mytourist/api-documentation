@@ -75,7 +75,7 @@ This endpoint will return the number of `available` rooms and current logies pri
 
 
 ## Bulk changes
-With this function you can manage and overwrite the following values of; `available`, `price_per_night`, `min_stay`, `max_stay`, `may_checkin_on`, `may_checkout_on` per `price_rate` per day or just a selected period. With this functions it's no longer needed to make bulk changes to your calendar via the MyTourist GUI. 
+With this function you can manage and overwrite the following values; `available`, `price_per_night`, `min_stay`, `max_stay`, `may_checkin_on`, `may_checkout_on` per `price_rate` per day or just a selected period. With this functions it's no longer needed to make bulk changes to your calendar via the MyTourist GUI. 
 
 **POST** `https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}`
 
