@@ -6,9 +6,9 @@ layout: default
 ### [Back to overview](index.html#api-endpoints)
 
 # Availability
-When you want to check the availability of a specific date range with the calculated total price (logies) for you can take the `Availability check` endpoint. After calling you have enough data to push a <a href="bookings.html">booking</a>. 
+When you want to check the availability of a specific date range with the calculated total price (logies) then you can take this endpoint. After calling you have enough data to create an booking via the <a href="bookings.html">bookings</a> endpoint. 
 
-> NOTICE: When you want the availability and price per day for like calendar purposes you'll take the [Fetch the calendar data](calendar.html#fetch-the-calendar-data) endpoint. 
+> NOTICE: When you want the availability and price per day for like calendar purposes you'll take the [fetch the calendar data](calendar.html#fetch-the-calendar-data) calendar endpoint. 
 
 >This endpoint is an fully cached results, the cache will refresh after a change took place in your account. It may take a few minutes to implement those changes into the cache.
 
