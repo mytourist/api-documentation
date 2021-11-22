@@ -134,11 +134,10 @@ As in MyTourist, inside the calendar you can overwrite the default price rate de
 <table>
     <tr><td>from</td><td>required</td><td>YYYY-MM-DD</td></tr>    
     <tr><td>until</td><td>required</td><td>YYYY-MM-DD</td></tr>       
-    <tr><td>rate_id</td><td>required</td><td>The unique price_rate @id</td></tr>       
+    <tr><td>rate_id</td><td>required</td><td>The unique price_rate @id</td></tr> 
+    <tr><td>rooms_to_sell</td><td>optional</td><td>Won't go higher than the exact number of rooms. `rooms_to_sell` = `rooms_to_sell` MINUS `number_of_bookings`</td></tr>       
     <tr><td>min_stay</td><td>optional</td><td>Nights</td></tr>       
-    <tr><td>max_stay</td><td>optional</td><td>Nights</td></tr>       
-    <tr><td>min_advance</td><td>optional</td><td>0-72 hours.</td></tr>       
-    <tr><td>max_advance</td><td>optional</td><td>1-30 days</td></tr>       
+    <tr><td>max_stay</td><td>optional</td><td>Nights</td></tr>         
     <tr><td>may_checkin_on</td><td>optional</td><td>mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
     <tr><td>may_checkout_on</td><td>optional</td><td>mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
     <tr><td>logies_amount</td><td>optional</td><td>decimal 10,2</td></tr>       
