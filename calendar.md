@@ -91,7 +91,7 @@ With this function you can manage and overwrite the following values of; `availa
     <tr><td>price_per_night</td><td>optional</td><td>decimal 10,2  or use `auto` for the default value</td></tr>       
 </table>
 
-### Example 1 | change availability for one single day.
+#### Example 1 | change availability for one single day.
 In this example we will lower the number of available rooms from 4 to just 1 available room.
 
 ```
@@ -102,7 +102,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'rooms_to_sell="1"'
 ```
 
-### Example 2 | setup only arrivals on Monday/Tuesday and Departures on Friday/Saturday between longer period.
+#### Example 2 | setup only arrivals on Monday/Tuesday and Departures on Friday/Saturday between longer period.
 In this example we give the weekdays witch allowed to arrive and depart. The weekdays now given will be closed for arrival or departure.
 
 ```
@@ -112,4 +112,15 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'until="2030-05-15"' \
 --form 'may_checkin_on="mo,tu"' \
 --form 'may_checkin_on="fr,sa"'
+```
+
+#### Example 3 | Change price for one week
+For this period we will change te price from 120 to 100.
+
+```
+curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}' \
+--header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
+--form 'from="2030-01-01"' \
+--form 'until="2030-01-07"' \
+--form 'price_per_nights="100,00"'
 ```
