@@ -61,6 +61,7 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
         "number_of_guests":4,
         "number_of_children":2,
         "dietary_wishes":"No Gluten",
+        "access_code":"1234",
         "note":"Brings bicycles and would like to park them in the garage",
         "commission_amount":null,
         "rate":{
@@ -164,6 +165,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>number_of_guests</td><td>optional</td><td>integer</td></tr>
     <tr><td>number_of_children</td><td>optional</td><td>integer (number of children inside the guests total)</td></tr>
     <tr><td>dietary_wishes</td><td>optional</td><td>string</td></tr>
+    <tr><td>access_code</td><td>optional</td><td>string</td></tr>
     <tr><td>note</td><td>optional</td><td>string</td></tr>
     <tr><td>commission_amount</td><td>optional</td><td>float</td></tr>
     <tr><td>forced_logies_price</td><td>optional</td><td>float (to force logies invoice price)</td></tr>
