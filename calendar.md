@@ -49,16 +49,47 @@ This endpoint will return the number of `available` rooms and current logies pri
                 "custom_value":false
             },
             "prices":{
-                "23192010281":{
-                    "name":"My Default price rate",
-                    "custom_value":false,
-                    "price":80,
-                    "min_stay":2,
-                    "max_stay":null,
-                    "closed_on_arrival":true,
-                    "closed_on_departure":false
+                "120022112": {
+                    "id": "120022112",
+                    "min_stay": 2,
+                    "max_stay": 3,
+                    "closed_on_arrival": false,
+                    "closed_on_departure": true,
+                    "name": "Weekend arrangement",
+                    "public_name": "Verblijf met 15% korting - vanaf 3 nachten",
+                    "current_price": 100,
+                    "default_price": 100,
+                    "is_custom_price": false,
                 },
-                "..." : "..."
+                "120022113": {
+                    "id": "120022112",
+                    "min_stay": 3,
+                    "max_stay": 14,
+                    "closed_on_arrival": false,
+                    "closed_on_departure": true,
+                    "name": "OTA (booking.com)",
+                    "public_name": "",
+                    "current_price": 110,
+                    "default_price": 110,
+                    "is_custom_price": false,
+                    "is_subrate": true,
+                    "subrate": {
+                        "adjusted_by": "percentage",
+                        "value": "10"
+                    }
+                },
+                "120022114": {
+                    "id": "120022112",
+                    "min_stay": 3,
+                    "max_stay": 14,
+                    "closed_on_arrival": false,
+                    "closed_on_departure": true,
+                    "name": "Midweek",
+                    "public_name": "",
+                    "current_price": 150,
+                    "default_price": 140,
+                    "is_custom_price": true,
+                },
             }
         },
         "20201201" : {
@@ -123,6 +154,18 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-07"' \
 --form 'price_per_nights="100,00"'
+
+#### Example 3 | Change price for one week for a sub-price rate.
+For this period we will change te price from 100 to 110 by increasing the subprofiles percentage by 10%.
+
+> With sub-price rates, you only enter the amount or percentage that this price profile deviates from the parent price profile. In the "Fetch the calendar data" enpoint as described above, you can find the exact `adjusted_by` value of the respective sub price rate.
+
+```
+curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}' \
+--header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
+--form 'from="2030-01-01"' \
+--form 'until="2030-01-07"' \
+--form 'price_per_nights="10"'
 ```
 
 #### Example 4 | Reset everything into their defaults
