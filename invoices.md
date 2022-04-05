@@ -189,4 +189,4 @@ You can easily register payments to an invoice. Be aware that we don't send any 
 This request will return PDF content, to parse this content you need to parse as `application/pdf`. *Note; your authentication header is still required to download invoices.*
 
 **GET**      
-`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/download/pdf` 
+`https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/pdf` 
