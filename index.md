@@ -106,6 +106,8 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 # Updates
 
+**2022 03 05** - Corrected URL for downloading PDF invoices.
+
 **2022 01 12** - From now on it is possible to add door access codes `access_code` behind individual bookings. These can be sent to the customer later with, for example, automatic email templates. See the [bookings](bookings.html) endpoint for more information.
 
 **2021 11 22** - We moved the `Availability Monthly calendar` from the availability endpoint into it's own endpoint called [calendar](calender.html). This because we released [bulk changes](calendar.html#bulk-changes) into our API which is also an endpoint for the calendar. The old `POST` url into the availability endpoint is still working and redirects automatically to the new endpoint.
