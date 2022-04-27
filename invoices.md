@@ -49,6 +49,15 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
     <tr><td>product</td><td>Can be a product managed inside MyTourist or an manually added product.</td></tr>
 </table>
 
+**Payments**
+<table>
+    <tr><td>id</td><td>Unique payment ID</td></tr>
+    <tr><td>payment_method</td><td>Can be either `bank_transfer`, `bank_card`, `credit_card`, `cash`, `voucher`, `channel`, 'cheque'</td></tr>
+    <tr><td>amount</td><td>Amount payed (float)</td></tr>
+    <tr><td>description</td><td>Description (when added by MyTourist user)</td></tr>
+    <tr><td>created_at</td><td>YYYY-MM-DD HH:MM::SS</td></tr>
+</table>
+
 **JSON example Result**
 ```json
 {
