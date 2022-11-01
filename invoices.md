@@ -150,7 +150,12 @@ These endpoints will return always the created or updated invoice (HTTP 200)
 Your freshly created invoice has always the `proforma` type. Call the URL below to attach automatically the next invoice ID from your administration. The state of your Invoice will automatically change from proforma to invoice. Invoices with an official invoiceID are not removable and can only be credited afterwards.
 
 **POST (Add Invoice ID, Make final Invoice)**    
-`https://app.mytourist.cloud/api/v1/invoices/add-invoice-id/{INVOICE_ID}`   
+`https://app.mytourist.cloud/api/v1/invoices/make-final/{INVOICE_ID}`   
+
+**Parameters**
+<table>
+    <tr><td>invoice_date</td><td>optional</td><td>DATE: YYYYMMDD (default: today)</td></tr>
+</table>
 
 ## Manage product lines
 You can use the pre defined products you have already been added in MyTourist or set your own product line in this invoice. Both add and update calls will return (HTTP 200) the full result of the line you just created/updated.
