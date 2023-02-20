@@ -106,7 +106,17 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 # Updates
 
-**2022 03 05** - Corrected URL for downloading PDF invoices.
+**2023 02 23** - We have added an extra function inside the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) provides a list with booking who are leaving, staying of arriving today (or other date)
+
+**2022 11 01** - We have made an small correction to the [invoices](invoices.html) endpoint documentation. Making invoices final had a incorrect URL, and we added a parameter to this endpoint to set other invoice dates.
+
+**2022 05 26** - Added some extra times inside the `expected_arrival_time` parameter on the [bookings](bookings.html) endpoint and documented with the supported written times.
+
+**2022 04 27** - Registering payments in the [invoices](invoices.html) endpoint.
+
+**2022 04 05** - Corrected URL for downloading PDF invoices.
+
+**2022 01 24** - We improved the pricing examples inside the [calendar](calendar.html) endpoint for more information.
 
 **2022 01 12** - From now on it is possible to add door access codes `access_code` behind individual bookings. These can be sent to the customer later with, for example, automatic email templates. See the [bookings](bookings.html) endpoint for more information.
 
