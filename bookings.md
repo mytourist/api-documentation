@@ -10,6 +10,7 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 **Index:** 
 - [List of bookings between dates](#list-of-bookings-between-dates)
 - [List of bookings from specific debtor](#list-of-bookings-from-specific-debtor)
+- [List of bookings currently staying](#list-of-bookings-currently-staying)
 - [Retrieve a single booking](#retrieve-a-single-booking)
 - [Create a booking](#create-a-booking)
 - [Update a booking](#update-a-booking)
@@ -130,6 +131,7 @@ This function provides you with an list of all the bookings corresponding with t
 **Query Parameters**
 <table>
     <tr><td>date</td><td>optional</td><td>20300131 (YYYYMMDD) (empty is today)</td></tr>
+    <tr><td>light</td><td>optional</td><td>boolean (false by default) - faster response, less data</td>
 </table>
 
 # Retrieve a single booking
