@@ -126,12 +126,12 @@ Like [List of bookings between dates](#list-of-bookings-between-dates), this fun
 # List of bookings currently staying
 This function provides you with an list of all the bookings corresponding with the current (or other) date. This can be bookings who are departing, staying or arriving today. Like the insights page inside the MyTourist UI those bookings are sorted bij the order of the unit(types).
 
-**GET** `https://app.mytourist.cloud/api/v1/bookings/current-bookings?date={DATE}`
+**GET** `https://app.mytourist.cloud/api/v1/bookings/current-bookings?date={DATE}&light=true`
 
 **Query Parameters**
 <table>
     <tr><td>date</td><td>optional</td><td>20300131 (YYYYMMDD) (empty is today)</td></tr>
-    <tr><td>light</td><td>optional</td><td>boolean (false by default) - faster response, less data</td>
+    <tr><td>light</td><td>optional</td><td>boolean (false by default) - faster response, less data</td></tr>
 </table>
 
 # Retrieve a single booking
