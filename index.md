@@ -106,7 +106,7 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 # Updates
 
-**2023 04 13** - Added the `light` mode on the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) has now a light mode for faster response time.
+**2023 04 13** - Added the `breakfast_booked` (true/false) to the JSON response inside the [bookings](bookings.html) endpoint. And we solved an typo inside the [invoices](invoices.html) endpoint. `total_payed` changed into `total_paid`. We have also added the `light` mode on the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) has now a light mode for faster response time.
 
 **2023 02 23** - We have added an extra function inside the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) provides a list with booking who are leaving, staying of arriving today (or other date)
 
