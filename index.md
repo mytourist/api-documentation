@@ -23,7 +23,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
 
-- [Latest update 13th april '23](#updates)
+- [Latest update 10th july '23](#updates)
 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
@@ -105,6 +105,8 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
 
 # Updates
+
+**2023 07 10** - All individual guest data will be displayed as well from now one by adding `guests` (object) to the JSON response inside the [bookings](bookings.html) endpoint.  
 
 **2023 04 13** - Added the `breakfast_booked` (true/false) to the JSON response inside the [bookings](bookings.html) endpoint. And we solved an typo inside the [invoices](invoices.html) endpoint. `total_payed` changed into `total_paid`. We have also added the `light` mode on the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) has now a light mode for faster response time.
 

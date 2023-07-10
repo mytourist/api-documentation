@@ -60,6 +60,32 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
             "...":"..."
         },
         "number_of_guests":4,
+        "guests": [
+            {
+                "salutation": "male",
+                "firstname": "Max",
+                "lastname": "Musterman",
+                "birthday": "1985-04-01",
+                "address": "Demostreet 44",
+                "zipcode": "123456",
+                "city": "Amsterlin",
+                "country": "NL",
+                "phone": "0031 0800 0101",
+                "email": "example@demohotel.com"
+            },
+            {
+                "salutation": "female",
+                "firstname": "Maxine",
+                "lastname": "Musterman",
+                "birthday": "1985-07-01",
+                "address": "Demostreet 44",
+                "zipcode": "123456",
+                "city": "Amsterlin",
+                "country": "NL",
+                "phone": "0031 0800 0101",
+                "email": "example@demohotel.com"
+            }
+        ],
         "number_of_children":2,
         "dietary_wishes":"No Gluten",
         "access_code":"1234",
