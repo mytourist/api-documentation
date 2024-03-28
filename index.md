@@ -10,7 +10,7 @@ Use the MyTourist API to integrate availability check, debtors and a lot more in
 If you have any questions about integrating our API, please contact us. We’re happy to help!
 
 **Quick jump to:**   
-- [Get an API key](#get-an-api-key)
+- [Get an API key](#obtain-a-api-key)
 - [Risk and warranty](#use-at-your-own-risk--no-warranty)
 - [Authentication](#authentication)
 - [Start developing, test and deploy](#start-developing-test-and-deploy)
@@ -105,6 +105,8 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
 
 # Updates
+
+**2024 03 28** - We added `public naming and descriptions`, `amenities`, `square_meters` and `picture URLS` inside the [roomtype](roomtype.html) endpoint. 
 
 **2023 07 10** - All individual guest data will be displayed as well from now one by adding `guests` (object) to the JSON response inside the [bookings](bookings.html) endpoint.  
 
