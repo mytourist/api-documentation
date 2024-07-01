@@ -16,6 +16,8 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 - [Update a booking](#update-a-booking)
 - [Cancel a booking](#cancel-a-booking)
 - [Available form parameters](#available-form-parameters)
+- [List guests](#list-guests)
+- [Update single Guest](#update-single-guest)
 - [Available channels](#available-channels)
 
 
@@ -201,8 +203,6 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>state</td><td>optional</td><td>optional/confirmed (default:confirmed)</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
-    <tr><td>number_of_guests</td><td>optional</td><td>integer</td></tr>
-    <tr><td>number_of_children</td><td>optional</td><td>integer (number of children inside the guests total)</td></tr>
     <tr><td>dietary_wishes</td><td>optional</td><td>string</td></tr>
     <tr><td>access_code</td><td>optional</td><td>string</td></tr>
     <tr><td>note</td><td>optional</td><td>string</td></tr>
@@ -215,6 +215,56 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
 </table>
 
 \* Required on creating a booking.
+
+# List guests
+List all the guests for a single booking.
+
+**GET** `https://stage.mytourist.cloud/api/v1/bookings/{BOOKING_ID}/guests`
+
+**Example result**
+```json
+[
+    {
+        "guest_id": 1,
+        "salutation": "male",
+        "firstname": "Max",
+        "lastname": "Musterman",
+        "birthday": "03-07-1962",
+        "address": "Previewstreet 44",
+        "zipcode": "1234AA",
+        "city": "Amsterdam",
+        "country": "NL",
+        "phone": "06123456789",
+        "email": "email@email.com"
+    },
+    {
+        "guest_id": 2,
+        ".." : ".."
+    }
+]
+```
+
+# Update single guest
+
+To update one of your guests.
+
+**POST** `https://stage.mytourist.cloud/api/v1/bookings/{BOOKING_ID}/guests/{GUEST_ID}`
+
+### Available form parameters
+<table>
+    <tr><td>salutation</td><td>male/female</td></tr>
+    <tr><td>firstname</td><td></td></tr>
+    <tr><td>lastname</td><td></td></tr>
+    <tr><td>birthday</td><td>YYYYMMDD</td></tr>
+    <tr><td>address</td><td></td></tr>
+    <tr><td>zipcode</td><td></td></tr>
+    <tr><td>city</td><td></td></tr>
+    <tr><td>country</td><td>ISO-2</td></tr>
+    <tr><td>phone</td><td></td></tr>
+    <tr><td>email</td><td></td></tr>
+</table>
+
+
 
 # Available channels
 
