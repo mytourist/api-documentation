@@ -200,6 +200,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
     <tr><td>departure</td><td>required*</td><td>DATE: YYYYMMDD</td></tr>
     <tr><td>roomtype_id</td><td>required*</td><td>ID of <a href="price-rates.html">roomtypes</a></td></tr>
     <tr><td>rate_id</td><td>optional*</td><td>ID of a <a href="price-rates.html">price rate</a> inside the selected roomtype. (default: 1th listed rate)</td></tr>
+    <tr><td>unit_id</td><td>optional</td><td>Prefered unit ID. System will automatically select another available room when this unit ID isn't availble</td></tr>tr>
     <tr><td>debtor_id</td><td>optional</td><td>Default: no <a href="debtors.html">debtor</a> attached</td></tr>
     <tr><td>state</td><td>optional</td><td>optional/confirmed (default:confirmed)</td></tr>
     <tr><td>auto_send_email</td><td>optional</td><td>true/false (default:true)</td></tr>
