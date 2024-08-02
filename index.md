@@ -23,8 +23,6 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
 
-- [Latest update 10th july '23](#updates)
-
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
 
@@ -103,39 +101,3 @@ For the endpoints below, your own authentication bearer token in MyTourist must 
 
 ### [ObtainBearerToken](obtain-bearer-token.html)
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
-
-# Updates
-
-**2024 03 28** - We added `public naming and descriptions`, `amenities`, `square_meters` and `picture URLS` inside the [roomtype](roomtype.html) endpoint. 
-
-**2023 07 10** - All individual guest data will be displayed as well from now one by adding `guests` (object) to the JSON response inside the [bookings](bookings.html) endpoint.  
-
-**2023 04 13** - Added the `breakfast_booked` (true/false) to the JSON response inside the [bookings](bookings.html) endpoint. And we solved an typo inside the [invoices](invoices.html) endpoint. `total_payed` changed into `total_paid`. We have also added the `light` mode on the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) has now a light mode for faster response time.
-
-**2023 02 23** - We have added an extra function inside the [bookings](bookings.html) endpoint. [List of bookings currently staying](bookings.html#list-of-bookings-currently-staying) provides a list with booking who are leaving, staying of arriving today (or other date)
-
-**2022 11 01** - We have made an small correction to the [invoices](invoices.html) endpoint documentation. Making invoices final had a incorrect URL, and we added a parameter to this endpoint to set other invoice dates.
-
-**2022 05 26** - Added some extra times inside the `expected_arrival_time` parameter on the [bookings](bookings.html) endpoint and documented with the supported written times.
-
-**2022 04 27** - Registering payments in the [invoices](invoices.html) endpoint.
-
-**2022 04 05** - Corrected URL for downloading PDF invoices.
-
-**2022 01 24** - We improved the pricing examples inside the [calendar](calendar.html) endpoint for more information.
-
-**2022 01 12** - From now on it is possible to add door access codes `access_code` behind individual bookings. These can be sent to the customer later with, for example, automatic email templates. See the [bookings](bookings.html) endpoint for more information.
-
-**2021 11 22** - We moved the `Availability Monthly calendar` from the availability endpoint into it's own endpoint called [calendar](calender.html). This because we released [bulk changes](calendar.html#bulk-changes) into our API which is also an endpoint for the calendar. The old `POST` url into the availability endpoint is still working and redirects automatically to the new endpoint.
-
-**2021 10 22** - Latitude and Longitude (view and editable) added to the [debtors](debtors.html) endpoint.
-
-**2021 10 19**    
-- Added mobile phone number to the endpoint [debtor](debtors.html).
-- Full debtor data is also shown on the [bookings](bookings.html) endpoint.
-- Expected arrival is retrieve and editable from the [bookings](bookings.html) endpoint.
-- We now trigger also the webhook `booking_updated` when an debtor is detached from the booking itself.
-
-**2021 07 07** - We added a new bookings endpoint [List of bookings from specific debtor](#list-of-bookings-from-specific-debtor). Like [List of bookings between dates](#list-of-bookings-between-dates), this function provides a list view of all bookings. But now based on a specific [debtor](debtors.html) ID.
-
-**2021 06 02** - We added `related_bookings` to the response JSON for the endpoints [Retrieve a single booking](bookings.html#retrieve-a-single-booking) and [List bookings between dates](bookings.html#list-bookings-between-dates). This way you can retrieve directly all the related sub-bookings (each booked room has their own booking `id`). Also check which booking is the _main_ booking. In previous version only the main-booking gave back all the invoice data. We'd changed that so either the _main_ of related _sub_ booking return _the_ invoice.
