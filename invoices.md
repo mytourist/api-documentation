@@ -65,6 +65,7 @@ Be aware the `from` and `until` parameters are required to prevent heavy server 
    "invoice_id":null,
    "language":"en",
    "type":"proforma",
+   "reservation":"1240815785",
    "financial_state":"open",
    "debtor_id":"23192010282",
    "footnote":"",
