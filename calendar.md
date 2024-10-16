@@ -153,7 +153,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-07"' \
---form 'price_per_nights="100,00"'
+--form 'price_per_night="100,00"'
 
 #### Example 3 | Change price for one week for a sub-price rate.
 For this period we will change te price from 100 to 110 by increasing the subprofiles percentage by 10%.
@@ -165,7 +165,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-07"' \
---form 'price_per_nights="10"'
+--form 'price_per_night="10"'
 ```
 
 #### Example 4 | Reset everything into their defaults
@@ -177,7 +177,7 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-07"' \
 --form 'rooms_to_sell="auto"'\
---form 'price_per_nights="auto"'\
+--form 'price_per_night="auto"'\
 --form 'min_stay="auto"'\
 --form 'max_stay="auto"'\
 --form 'may_checkin_on="mo,tu,we,th,fr,sa,su"'\
