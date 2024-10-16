@@ -18,7 +18,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [HTTP responses table](#http-responses-table)
 - [API Endpoints](#api-endpoints)
 
-> [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](#PriceRates), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
+> [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](price-rates.html), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
@@ -72,7 +72,7 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 >Check for available roomtypes in a predefined date range. This endpoint will return the roomtypes and available Rate plan ID's. [Go to the documentation](availability.html)
 
 >### [Debtors](debtors.html)
->Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](#list-all-debtors), [Retrieve a single debtor](#retrieve-a-single-debtor), [Create / Update a debtor](#create--update-a-debtor).
+>Manage your debtors easily from this endpoint. [Go to the documentation](debtors.html) or jump direct to [List all debtors](debtors.html#list-all-debtors), [Retrieve a single debtor](debtors.html#retrieve-a-single-debtor), [Create / Update a debtor](debtors.html#create--update-a-debtor).
 
 >### [Bookings](bookings.html)
 >Via this endpoint it is possible to add and manage bookings. It will create fully automatically the invoice and debtor. Bookings already placed by other connected providers are not editable. [Go to the documentation](bookings.html) or jump direct to [List bookings between dates](bookings.html#list-bookings-between-dates), [List of bookings from specific debtor](bookings.html#list-of-bookings-from-specific-debtor), [Retrieve a single booking](bookings.html#retrieve-a-single-booking), [Create a booking](bookings.html#create-a-booking), [Update a booking](bookings.html#update-a-booking), [Cancel a booking](bookings.html#cancel-a-booking), [Available form parameters](bookings.html#available-form-parameters), [Available channels](bookings.html#available-channels).
@@ -93,7 +93,7 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 >To keep a clean overview of all the product you'll have. You can add a name and color to your categories, they only be visible for you and not for your customers. [Go to the documentation](product-categories.html) or jump direct to [List all product categories](product-categories.html#list-all-product-categories), [Create or update a product category](product-categories.html#create-or-update-a-product-category), [Remove a product category](product-categories.html#remove-a-product-category), [Available form parameters](product-categories.html#available-form-parameters).
 
 >### [PriceRates](price-rates.html)
->Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](price-rates.html#list-all-price-rates),[Retrieve a single price rate](price-rates.html#retrieve-a-single-price-rate), [Create a price rate](price-rates.html#create-a-price-rate), [Update a price rate](price-rates.html#create-a-price-rate), [Delete a price rate](price-rates.html#create-a-price-rate).
+>Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](price-rates.html#list-all-price-rates),[Retrieve a single price rate](price-rates.html#retrieve-a-single-price-rate).
 
 
 # API Endpoints (certified access only)
