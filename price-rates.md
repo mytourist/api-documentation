@@ -84,9 +84,3 @@ Same result as above but than a particular single price rate wil returned in `js
     <tr><td>default_price_per_night</td><td>Default price per night in euro's or in percentages.</td></tr>
     <tr><td>price_per_night_percentage</td><td>Price value is percentage (only available when sub rate)</td></tr>
 </table>
-
-# Create a price rate
-### Update a price rate
-### Delete a price rate
-
-<span style="color:orange">These API endpoints are only available for certified software partners and not for individual MyTourist customers. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> for more information.</span>
