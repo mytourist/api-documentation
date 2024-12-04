@@ -26,9 +26,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 ## The MyTourist REST API
 The API implements a Representational state transfer (REST) architecture. Sounds technical, but it’s really quite easy. It mainly breaks down to HTTP-methods GET, PATCH, POST and DELETE matching the operations to read, update, create and delete.
 
-REST also implies a nice and clean structure for URLs or endpoints. This means you can reach any part of the MyTourist API on https://app.mytourist.com/api/v1 adding the name of the resource you want to interact with.
-
-Default the throttle limit is 25 requests each 60 seconds. We can individually increase this amount but only on good substantiation. All endpoints will return their data in `JSON` format.
+REST also implies a nice and clean structure for URLs or endpoints. This means you can reach any part of the MyTourist API on https://app.mytourist.com/api/v1 adding the name of the resource you want to interact with. The API rate limit is 10 requests each 10 seconds.
 
 ## Obtain a API token
 The first thing you need is a API token. Each location-/company profile has a API token printed inside the API page found in preferences. Of course it’s very important to keep your API token secure. Do not ever share them. 
