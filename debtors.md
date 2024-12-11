@@ -10,6 +10,7 @@ This API endpoint let you manage your debtors. [Parameters](#available-parameter
 **Index:** 
 - [List all debtors](#list-all-debtors)
 - [Retrieve a single debtor](#retrieve-a-single-debtor)
+- [Search debtors](#search-debtors)
 - [Create / Update a debtor](#create--update-a-debtor)
 
 ## List all debtors
@@ -78,6 +79,12 @@ Get a single Debtor returned in `JSON` format. We also add all the bookings atta
     ]
 }
 ```
+
+## Search debtors
+Receive a list of debtors based on **all** given search term(s)
+**GET** `https://app.mytourist.cloud/api/v1/debtors?search={keyterm1,keyterm2...}`
+Response exists debtor results that corresponds each search term (comma seperated).
+Fields used for search query: first_name, last_name, company_name, company_id, email, phone, street, city, zipcode, debtor ID
 
 ## Create / Update a debtor
 You can create or update a debtor by posting to the following URL. This endpoints will return (when success) the saved debtor (200 HTTP response). You can either post the full JSON file or single individual fields. When the field is posted we always overwrite them. When a field is not posted trough the API we won't overwrite it and keep the existing data.
