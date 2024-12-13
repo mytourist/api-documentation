@@ -99,6 +99,7 @@ You can create or update a debtor by posting to the following URL. This endpoint
     <tr><td>company_name</td><td>optional</td><td>-</td></tr>
     <tr><td>company_chamber_id</td><td>optional</td><td>Chamber / KVK nr.</td></tr>
     <tr><td>vat_id</td><td>optional</td><td></td></tr>
+    <tr><td>bank_account</td><td>optional</td><td></td></tr>
     <tr><td>address</td><td>optional</td><td></td></tr>
     <tr><td>zipcode</td><td>optional</td><td></td></tr>
     <tr><td>city</td><td>optional</td><td></td></tr>
