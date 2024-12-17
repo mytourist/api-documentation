@@ -103,7 +103,7 @@ You can create or update a debtor by posting to the following URL. This endpoint
     <tr><td>address</td><td>optional</td><td></td></tr>
     <tr><td>zipcode</td><td>optional</td><td></td></tr>
     <tr><td>city</td><td>optional</td><td></td></tr>
-    <tr><td>country</td><td>optional</td><td>ISO 639-1</td></tr>
+    <tr><td>country</td><td>optional</td><td>ISO 3166-2</td></tr>
     <tr><td>mobile</td><td>optional</td><td></td></tr>
     <tr><td>phone</td><td>optional</td><td></td></tr>
     <tr><td>email</td><td>optional</td><td></td></tr>
