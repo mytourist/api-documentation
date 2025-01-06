@@ -18,7 +18,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [HTTP responses table](#http-responses-table)
 - [API Endpoints](#api-endpoints)
 
-> [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](price-rates.html), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
+> [Property](property.html), [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](price-rates.html), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
