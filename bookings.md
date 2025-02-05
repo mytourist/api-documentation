@@ -9,6 +9,7 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 
 **Index:** 
 - [List of bookings between dates](#list-of-bookings-between-dates)
+- [List of bookings from specific debtor](#list-of-bookings-from-specific-debtor)
 - [List of bookings currently staying](#list-of-bookings-currently-staying)
 - [Retrieve a single booking](#retrieve-a-single-booking)
 - [Create a booking](#create-a-booking)
@@ -139,6 +140,14 @@ To prevent heavy requests you need to give us an `from` and `until` date. These 
     }
 ]
 ```
+# List of bookings from specific debtor
+Like [List of bookings between dates](#list-of-bookings-between-dates), this function provides a list view of all bookings. But now based on a specific [debtor](debtors.html) number.
+**GET** `https://app.mytourist.cloud/api/v1/bookings/from-debtor?debtor_id={DEBTOR_ID}`
+**Query Parameters**
+<table>
+    <tr><td>debtor_id</td><td colspan="2">required</td></tr>
+    <tr><td>show_cancellations</td><td>optional</td><td>boolean; true</td></tr>
+</table>
 
 # List of bookings currently staying
 This function provides you with an list of all the bookings corresponding with the current (or other) date. This can be bookings who are departing, staying or arriving today. Like the insights page inside the MyTourist UI those bookings are sorted bij the order of the unit(types).
