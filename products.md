@@ -105,12 +105,12 @@ The update function is exactly the same as above. The only difference is that no
 
 *Automatically translations for the `name` and `description` fields will be generated after 30 minutes of your last change*
 
-**POST** `https://app.mytourist.cloud/api/v1/products/{DEBTOR_ID}`
+**POST** `https://app.mytourist.cloud/api/v1/products/{PRODUCT_ID}`
 
 ## Remove a product
 This has no effect on your proforma invoices. When you want to delete those products also from your proforma invoices you'll need to remove those product lines. See [Invoices API](invoices.html) documentation for more information about invoice product lines.
 
-**DELETE** `https://app.mytourist.cloud/api/v1/products`
+**DELETE** `https://app.mytourist.cloud/api/v1/products/{PRODUCT_ID}`
 
 # Available form parameters
 The `calculation_methods` provide you with the possibility to automatically calculate the price per night or/and nights .. when the product is added to your invoice it will calculate the price based on those two items. But is always optional.
