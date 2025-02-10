@@ -194,6 +194,7 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
 
 # Attach to booking
 Only bookings from `mytourist`, `website` or `api` can be attached to another booking. After attaching reservations, MyTourist will merge both invoices.
+
 **POST** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}/attach`
 
 **Query Parameters**
@@ -203,6 +204,7 @@ Only bookings from `mytourist`, `website` or `api` can be attached to another bo
 
 # Detach from booking
 Only bookings from `mytourist`, `website` or `api` can be detached from another booking. After detaching a reservations, MyTourist will create a new invoice for the detached booking.
+
 **POST** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}/detach`
 
 # Available form parameters
