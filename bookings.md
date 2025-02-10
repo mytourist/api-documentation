@@ -15,6 +15,8 @@ This API endpoint let you manage your price rates. Most useful to fetch price ra
 - [Create a booking](#create-a-booking)
 - [Update a booking](#update-a-booking)
 - [Cancel a booking](#cancel-a-booking)
+- [Attach to booking](#attach-booking)
+- [Detach from booking](#detach-booking)
 - [Available form parameters](#available-form-parameters)
 - [List guests](#list-guests)
 - [Update single Guest](#update-single-guest)
@@ -189,6 +191,19 @@ Only bookings from `mytourist`, `website` (booking engine) or `api` can be cance
 **DELETE** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}`
 
 > If, for some reason a booking is out-of-sync, please contact support. 
+
+# Attach to booking
+Only bookings from `mytourist`, `website` or `api` can be attached to another booking. After attaching reservations, MyTourist will merge both invoices.
+**POST** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}/attach`
+
+**Query Parameters**
+<table>
+    <tr><td>main_reservation</td><td>required</td><td>Integer</td></tr>
+</table>
+
+# Detach from booking
+Only bookings from `mytourist`, `website` or `api` can be detached from another booking. After detaching a reservations, MyTourist will create a new invoice for the detached booking.
+**POST** `https://app.mytourist.cloud/api/v1/bookings/{BOOKING_ID}/detach`
 
 # Available form parameters
 <table>
