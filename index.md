@@ -18,7 +18,7 @@ If you have any questions about integrating our API, please contact us. We’re 
 - [HTTP responses table](#http-responses-table)
 - [API Endpoints](#api-endpoints)
 
-> [Property](property.html), [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](price-rates.html), [Roomtypes](roomtypes.html) or [TaxRates](tax-rates.html)
+> [Property](property.html), [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](price-rates.html), [Roomtypes](roomtypes.html), [TaxRates](tax-rates.html), [Vouchers](vouchers.html)
 
 - [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
@@ -93,6 +93,8 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 >### [PriceRates](price-rates.html)
 >Each roomtype has his own set of price rates. You can have as many as you want, you can create eg. weekend arrangements or long and short-stay price rates based on a small amount of criteria. These price rates can be connected to platforms like booking.com. [Go to the documentation](price-rates.html) or jump direct to .. [List all price rates](price-rates.html#list-all-price-rates),[Retrieve a single price rate](price-rates.html#retrieve-a-single-price-rate).
 
+>### [Vouchers](vouchers.html)
+>Guests can use vouchers and discount codes to make reservations via the booking engine with discount. This endpoint gives you the ability to create, edit, and delete vouchers.  [Go to the documentation](vouchers.html).
 
 # API Endpoints (certified access only)
 For the endpoints below, your own authentication bearer token in MyTourist must be marked as `certified`. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> or start a ticket to begin the certification process.
