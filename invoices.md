@@ -13,6 +13,7 @@ Invoices are (by default) automatically created when a booking is added to MyTou
 - [Add or Update a simple invoice](#add-or-update-a-simple-invoice)
 - [Make invoice official by adding an unique ID](#make-invoice-official-by-adding-an-unique-id)
 - [Manage product lines](#manage-product-lines)
+- [Get all payments](#get-all-payments)
 - [Manage Payments](#manage-payments)
 - [Download invoices](#download-invoice)
 
@@ -182,6 +183,10 @@ You can use the pre defined products you have already been added in MyTourist or
 **DELETE (Remove line)**    
 `https://app.mytourist.cloud/api/v1/invoices/{INVOICE_ID}/lines/{LINE_ID}`    
 
+## Get all payments
+Fetch all payments (not related to specific invoice) between $from and $until (period max 36 days).
+
+** GET** `https://app.mytourist.cloud/api/v1/invoices/payments?from={DATE}&until={DATE}`    
 
 ## Manage Payments
 You can easily register payments to an invoice. Be aware that we don't send any notifications when you registering any payments at this point. You can create and remove payments. Both calls returning the Payment object.
