@@ -154,18 +154,6 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'from="2030-01-01"' \
 --form 'until="2030-01-07"' \
 --form 'price_per_night="100,00"'
-
-#### Example 3 | Change price for one week for a sub-price rate.
-For this period we will change te price from 100 to 110 by increasing the subprofiles percentage by 10%.
-
-> With sub-price rates, you only enter the amount or percentage that this price profile deviates from the parent price profile. In the "Fetch the calendar data" enpoint as described above, you can find the exact `adjusted_by` value of the respective sub price rate.
-
-```
-curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}' \
---header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
---form 'from="2030-01-01"' \
---form 'until="2030-01-07"' \
---form 'price_per_night="10"'
 ```
 
 #### Example 4 | Reset everything into their defaults
@@ -182,4 +170,29 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'max_stay="auto"'\
 --form 'may_checkin_on="mo,tu,we,th,fr,sa,su"'\
 --form 'may_checkout_on="mo,tu,we,th,fr,sa,su"'\
+```
+
+### Handling multiple bulkchanges in one API request
+Post JSON to push multiple bulkchanges in one single API call.
+
+**POST** `https://app.mytourist.cloud/api/v1/calendar/bulk`
+
+Body:
+```json
+[
+    {
+        "rate_id":"12345678",
+        "from":"2025-08-14",
+        "until":"2025-08-14",
+        "price_per_night":"55",
+        "min_stay":3
+    },
+    {
+        "rate_id":"87654321",
+        "from":"2025-08-15",
+        "until":"2025-08-17",
+        "price_per_night":"60",
+        "min_stay":2
+    }
+]
 ```
