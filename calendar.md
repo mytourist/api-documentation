@@ -106,7 +106,7 @@ This endpoint will return the number of `available` rooms and current logies pri
 
 
 ## Bulk changes
-With this function you can manage and overwrite the following values; `available`, `price_per_night`, `min_stay`, `max_stay`, `may_checkin_on`, `may_checkout_on` per `price_rate` per day or just a selected period. With this functions it's no longer needed to make bulk changes to your calendar via the MyTourist GUI. 
+With this function you can manage and overwrite the following values; `available`, `price_per_night`, `min_stay`, `max_stay`, `close_to_arrival`, `close_to_departure` per `price_rate` per day or just a selected period. With this functions it's no longer needed to make bulk changes to your calendar via the MyTourist GUI. 
 
 **POST** `https://app.mytourist.cloud/api/v1/calendar/{RATE_ID}`
 
@@ -117,8 +117,8 @@ With this function you can manage and overwrite the following values; `available
     <tr><td>rooms_to_sell</td><td>optional</td><td>Won't go higher than the exact number of rooms. `rooms_to_sell` = `rooms_to_sell` MINUS `number_of_bookings` (calculated automatically) or use `auto` for the default value</td></tr>       
     <tr><td>min_stay</td><td>optional</td><td>Nights or use `auto` for the default value</td></tr>       
     <tr><td>max_stay</td><td>optional</td><td>Nights or use `auto` for the default value</td></tr>         
-    <tr><td>may_checkin_on</td><td>optional</td><td>Default: mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
-    <tr><td>may_checkout_on</td><td>optional</td><td>Default: mo,tu,we,th,fr,sa,su (comma separated)</td></tr>       
+    <tr><td>close_to_arrival</td><td>optional</td><td>`closed` or `open`. Or `default` to reset to price rate settings</td></tr>       
+    <tr><td>close_to_departure</td><td>optional</td><td>`closed` or `open`. Or `default` to reset to price rate settings</td></tr>       
     <tr><td>price_per_night</td><td>optional</td><td>decimal 10,2  or use `auto` for the default value</td></tr>       
 </table>
 
@@ -141,8 +141,8 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --header 'Authorization: Bearer {YOUR_SECRET_BEARER}' \
 --form 'from="2030-01-01"' \
 --form 'until="2030-05-15"' \
---form 'may_checkin_on="mo,tu"' \
---form 'may_checkout_on="fr,sa"'
+--form 'close_to_arrival="closed"' \
+--form 'close_to_departure="open"'
 ```
 
 #### Example 3 | Change price for one week
@@ -168,8 +168,8 @@ curl --location --request POST 'https://app.mytourist.cloud/api/v1/calendar/{RAT
 --form 'price_per_night="auto"'\
 --form 'min_stay="auto"'\
 --form 'max_stay="auto"'\
---form 'may_checkin_on="mo,tu,we,th,fr,sa,su"'\
---form 'may_checkout_on="mo,tu,we,th,fr,sa,su"'\
+--form 'close_to_arrival="closed"'\
+--form 'close_to_departure="default"'\
 ```
 
 ### Handling multiple bulkchanges in one API request
