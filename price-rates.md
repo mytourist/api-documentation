@@ -50,16 +50,6 @@ Get a list of all price rates inside a roomtype.
         "closed_on_departure":"tu,we,th,fr,sa",
         "default_price_per_night":"10.00", 
         "price_per_night_percentage":true,
-        "arrangement_products_inclusive":[
-            {
-                "id":"231920110418",
-                "name":{
-                    "nl":"Ontbijt"
-                },
-                "calculation_methods":["person","night"]
-            }
-        ],
-        "translated_at":"2020-11-04 13:21:29",
         "created_at":"2020-11-04 12:21:29",
         "updated_at":"2020-11-04 12:21:29"
     }
