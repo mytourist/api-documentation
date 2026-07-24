@@ -46,6 +46,8 @@ Get a list of all price rates inside a roomtype.
         "persons":2,                        
         "min_stay":4,
         "max_stay":null,
+        "min_advance":24, // number of hours
+        "max-advance":24, // number of hours
         "closed_on_arrival":"mo,tu,we,th,sa,su",
         "closed_on_departure":"tu,we,th,fr,sa",
         "default_price_per_night":"10.00", 
