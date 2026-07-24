@@ -20,7 +20,6 @@ If you have any questions about integrating our API, please contact us. We’re 
 
 > [Property](property.html), [Calendar](calendar.html), [Availability](availability.html), [Bookings](bookings.html), [Debtors](debtors.html), [Invoices](invoices.html), [Products](products.html), [ProductCategories](product-categories.html), [PriceRates](price-rates.html), [Roomtypes](roomtypes.html), [TaxRates](tax-rates.html), [Vouchers](vouchers.html)
 
-- [API Endpoints (certified access only)](#api-endpoints-certified-access-only)
 - [ObtainBearerToken](obtain-bearer-token.html)
 
 ## The MyTourist REST API
@@ -41,9 +40,6 @@ In the example below we use a API token on the GET method of the debtors resourc
 ```bash
 curl -X GET https://app.mytourist.cloud/api/v1/debtors -H 'Authorization: Bearer $2y$10$FP4s6cunWIGSjohTBDRO5eXNQAxWeG1.OxySTKv6FVVbaVhgwh7I6'
 ```
-
-## Certification
-For some eg. `create/update` endpoints an really good understanding of the OTA process is required. Thats why these functions are only available for contracted software/platform partners. To request access, please <a href="https://mytourist.cloud" target="_blank">contact us</a>.
 
 ## Start developing, test and Deploy
 By far [Postman](https://www.postman.com/) is a great tool to help you out in the first steps of build any connection with us. This tool enables you to test all GET/POST/PUT/Etc.. requests. We do sometimes host custom API's on our high-end cluster infrastructure for our customers and direct partners. Please contact us for more information.
@@ -95,9 +91,6 @@ To test your webhooks, we recommend using <a href="https://webhook.site/" target
 
 >### [Vouchers](vouchers.html)
 >Guests can use vouchers and discount codes to make reservations via the booking engine with discount. This endpoint gives you the ability to create, edit, and delete vouchers.  [Go to the documentation](vouchers.html).
-
-# API Endpoints (certified access only)
-For the endpoints below, your own authentication bearer token in MyTourist must be marked as `certified`. Please <a href="https://mytourist.cloud" target="_blank">contact us</a> or start a ticket to begin the certification process.
 
 ### [ObtainBearerToken](obtain-bearer-token.html)
 >This function makes it possible to request a bearer token on behalf of your customer in order to use the API. This way your customer does not have to log in to mytourist first to request his or her bearer token. [Go to the documentation](obtain-bearer-token.html)
