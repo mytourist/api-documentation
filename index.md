@@ -49,6 +49,8 @@ In Mytourist you will find the webhooks page within the settings page. Here you 
 
 To test your webhooks, we recommend using <a href="https://webhook.site/" target="_blank">https://webhook.site/</a>.
 
+Failed webhook deliveries (any response other than HTTP 200) are retried after 5, 15, and 60 minutes. After the third retry, no further attempts are made.
+
 # HTTP responses table
 <table>
     <tr><td>200</td><td>OK</td><td>Request is done without any exceptions.</td></tr>
