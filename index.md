@@ -3,6 +3,7 @@ title: API V1 MyTourist
 page.title: test
 layout: default
 ---
+> **Deprecated:** This documentation is no longer maintained. The new API documentation can be found in MyTourist under **Settings > Plugins > API > Docs**.
 
 # RESTful API Documentation.
 Use the MyTourist API to integrate availability check, debtors and a lot more intro your website or app. MyTourist and your website or app back-end will communicate by sending HTTP requests back and forth. This page provides an overview of the MyTourist API. The topics in the chapter deal with a number of specific aspects of the API. We recommend to read these topics entirely.
